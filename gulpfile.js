@@ -78,15 +78,8 @@ task('styles', () => {
         .pipe(reload({stream: true}))
 })*/
 task('script', () => {
-    return src([/*...JS_LIBS,*/ `${SRC_PATH}/scripts/*.js`])
+    return src([`${SRC_PATH}/scripts/*.js`])
         .pipe(gulpif(env === 'dev', sourcemaps.init()))
-        /*.pipe(babel({
-            // presets: ['@babel/preset-env']
-        }))*/
-        /*.pipe(browserify({
-            insertGlobals: true,
-            // require: [`node_modules/swiper`],
-        }))*/
         .pipe(webpack({
             mode: env === 'dev' ? 'development' : 'production',
         }))

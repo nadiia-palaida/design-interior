@@ -1,0 +1,21 @@
+.main-swiper {
+  height: 100%;
+}
+
+.main-swiper__item {
+  display: inline-block;
+  height: 100%;
+  position: relative;
+}
+
+.main-swiper__img {
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+}
+
+.swiper-slide {
+  width: 80%!important;
+}
+
