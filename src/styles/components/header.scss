@@ -3,6 +3,46 @@
   left: 0;
   top: 0;
   height: 96px;
+  width: 100%;
   background: transparent;
   z-index: 100;
+}
+
+.header__content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__content-block {
+  display: flex;
+}
+
+.header__logo-wrap {
+  margin-right: 141px;
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__item {
+  margin-right: 48px;
+  font-family: "Montserrat SemiBold", sans-serif;
+  color: #fff;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.menu__link {
+  color: #fff;
+}
+
+.language {
+  font-family: "Montserrat SemiBold", sans-serif;
+  font-size: 11px;
+  color: $text-light;
 }

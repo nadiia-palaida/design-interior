@@ -3,9 +3,15 @@
 }
 
 .main-swiper__item {
-  display: inline-block;
+  width: 100%;
   height: 100%;
+  display: inline-block;
   position: relative;
+}
+
+.main-swiper__img-wrap {
+  width: 100%;
+  height: 100%;
 }
 
 .main-swiper__img {
@@ -13,9 +19,33 @@
   left: 0;
   z-index: 0;
   width: 100%;
+  height: 100%;
 }
 
 .swiper-slide {
   width: 80%!important;
+}
+
+.main-swiper__img-wrap {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24))
+  }
+}
+
+.main-swiper__slide {
+  &:nth-child(even) {
+    .main-swiper__img-wrap::after {
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 1.28%, rgba(0, 0, 0, 0.05) 100%)
+    }
+  }
 }
 
