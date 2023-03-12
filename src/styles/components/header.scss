@@ -6,6 +6,11 @@
   width: 100%;
   background: transparent;
   z-index: 100;
+  transition: background-color 0.5s ease;
+
+  &.active {
+    background: rgba(000, 000, 000, 0.4);
+  }
 }
 
 .header__content {
@@ -17,6 +22,7 @@
 
 .header__content-block {
   display: flex;
+  align-items: center;
 }
 
 .header__logo-wrap {
@@ -30,6 +36,7 @@
 .menu__item {
   margin-right: 48px;
   font-family: "Montserrat SemiBold", sans-serif;
+  font-size: 11px;
   color: #fff;
 
   &:last-child {
@@ -42,7 +49,41 @@
 }
 
 .language {
+  position: relative;
+  margin-right: 83px;
   font-family: "Montserrat SemiBold", sans-serif;
   font-size: 11px;
   color: $text-light;
+}
+
+.language__list {
+  position: absolute;
+  display: none;
+  padding-top: 8px;
+  left: 0;
+  top: 100%;
+
+  &:hover {
+    display: block;
+  }
+}
+
+.language__active {
+  font-family: "Montserrat SemiBold", sans-serif;
+  color: $text-light;
+  font-size: 11px;
+  cursor: pointer;
+
+  &:hover {
+    & ~ .language__list {
+      display: block;
+    }
+  }
+}
+
+.language__btn {
+  font-family: "Montserrat SemiBold", sans-serif;
+  color: $text-light;
+  font-size: 11px;
+  cursor: pointer;
 }

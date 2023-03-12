@@ -19,6 +19,10 @@ button {
   border: none;
 }
 
+select {
+  outline: none;
+}
+
 body {
   font-family: 'Montserrat Light', sans-serif;
   letter-spacing: 0.06em;
@@ -27,8 +31,6 @@ body {
 .container {
   height: 100%;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -53,7 +55,7 @@ body {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1314px;
   }
 }
 
@@ -77,4 +79,26 @@ body {
 .btn_empty {
   color: $text-light;
   border: 1px solid rgba(253, 253, 253, 0.32);
+}
+
+.btn_full {
+  background: #fff;
+  color: $text-dark;
+}
+
+.section {
+  padding: 140px 0;
+}
+
+.title {
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: 36px;
+  color: $text-light;
+}
+
+.text {
+  font-family: 'Montserrat Light', sans-serif;
+  font-size: 14px;
+  color: $text-dark;
+  line-height: 24px;
 }

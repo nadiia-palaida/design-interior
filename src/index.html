@@ -5,6 +5,9 @@
     <title>Title</title>
 
     <link rel="stylesheet" href="main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 </head>
 <body>
 @@include('components/_header.html')
@@ -17,29 +20,366 @@
                     <div class="main-swiper__img-wrap">
                         <img src="images/main-carousel/1.jpg" alt="design project" class="main-swiper__img">
                     </div>
+
+                    <div class="main-swiper__item-content">
+                        <h3 class="main-swiper__item-title">
+                            <span>Thoughtful </span>
+                            <span>making of space</span>
+                        </h3>
+                        <div class="main-swiper__item-text">
+                            Discover more
+                        </div>
+                    </div>
+
+                    <div class="main-swiper__item-left-title">
+                        <span>Thoughtful </span>
+                        <span>making of space</span>
+                    </div>
                 </div>
             </div>
+
             <div class="swiper-slide main-swiper__slide">
                 <div class="main-swiper__item">
                     <div class="main-swiper__img-wrap">
                         <img src="images/main-carousel/2.jpg" alt="design project" class="main-swiper__img">
                     </div>
+
+                    <div class="main-swiper__item-content">
+                        <h3 class="main-swiper__item-title">
+                            <span>Perfect </span>
+                            <span>proportions</span>
+                        </h3>
+                        <div class="main-swiper__item-text">
+                            Discover more
+                        </div>
+                    </div>
+
+                    <div class="main-swiper__item-left-title">
+                        <span>Perfect </span>
+                        <span>proportions</span>
+                    </div>
                 </div>
             </div>
+
             <div class="swiper-slide main-swiper__slide">
                 <div class="main-swiper__item">
                     <div class="main-swiper__img-wrap">
                         <img src="images/main-carousel/1.jpg" alt="design project" class="main-swiper__img">
                     </div>
+
+                    <div class="main-swiper__item-content">
+                        <h3 class="main-swiper__item-title">
+                            <span>Thoughtful </span>
+                            <span>making of space</span>
+                        </h3>
+                        <div class="main-swiper__item-text">
+                            Discover more
+                        </div>
+                    </div>
+
+                    <div class="main-swiper__item-left-title">
+                        <span>Thoughtful </span>
+                        <span>making of space</span>
+                    </div>
                 </div>
             </div>
+
             <div class="swiper-slide main-swiper__slide">
                 <div class="main-swiper__item">
                     <div class="main-swiper__img-wrap">
                         <img src="images/main-carousel/2.jpg" alt="design project" class="main-swiper__img">
                     </div>
+
+                    <div class="main-swiper__item-content">
+                        <h3 class="main-swiper__item-title">
+                            <span>Perfect </span>
+                            <span>proportions</span>
+                        </h3>
+                        <div class="main-swiper__item-text">
+                            Discover more
+                        </div>
+                    </div>
+
+                    <div class="main-swiper__item-left-title">
+                        <span>Perfect </span>
+                        <span>proportions</span>
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <div class="main-swiper__navigation">
+            <div class="swiper-button-prev main-swiper__button-prev main-swiper__button-nav">
+                <svg viewBox="0 0 4 8" width="4" height="8">
+                    <use xlink:href="./images/icons/sprite.svg#arrow-navigation-left"></use>
+                </svg>
+            </div>
+
+            <div class="swiper-pagination main-swiper__pagination"></div>
+
+            <div class="swiper-pagination main-swiper__pagination2"></div>
+
+            <div class="swiper-button-next main-swiper__button-next main-swiper__button-nav">
+                <svg viewBox="0 0 4 8" width="4" height="8">
+                    <use xlink:href="./images/icons/sprite.svg#arrow-navigation-right"></use>
+                </svg>
+            </div>
+        </div>
+
+        <div class="swiper-button-next main-swiper__button-next2">
+            Next Project
+        </div>
+
+        <div class="main-info">
+            <div class="container">
+                <div class="main-info__content">
+                    <ul class="main-info__social-list">
+                        <li class="main-info__social-item">
+                            <a href="#" class="main-info__social-link">Fb</a>
+                        </li>
+                        <li class="main-info__social-item">
+                            <a href="#" class="main-info__social-link">In</a>
+                        </li>
+                        <li class="main-info__social-item">
+                            <a href="#" class="main-info__social-link">Be</a>
+                        </li>
+                    </ul>
+
+                    <div class="main-info__city">
+                        <select name="City" id="City" class="select-city">
+                            <option value="Berlin" selected class="select-city__option">Berlin</option>
+                            <option value="Lublin" class="select-city__option">Lublin</option>
+                            <option value="Warszawa" class="select-city__option">Warszawa</option>
+                            <option value="Lviv" class="select-city__option">Lviv</option>
+                        </select>
+                    </div>
+
+                    <ul class="main-info__contacts">
+                        <li class="main-info__contacts-item">
+                            <a href="tel:+380983527547" class="main-info__contacts-link">+380983527547</a>
+                        </li>
+                        <li class="main-info__contacts-item">
+                            <a href="mailto: info@gmail.com" class="main-info__contacts-link">E: info@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<section class="section-main-about main-about section">
+    <div class="container">
+        <div class="main-about__info-block">
+            <div class="main-about__info">
+                <div class="main-about__info-subtitle">
+                    About
+                </div>
+
+                <div class="main-about__info-content wow slideInLeft">
+                    <h2 class="main-about__info-title title">Company Philosophy </h2>
+                    <p class="main-about__info-text text">The basic philosophy of our studio is to create individual,
+                        aesthetically stunning solutions for our customers by lightning-fast development of projects
+                        employing unique styles and architecture. Even if you don't have a ready sketch of what you want
+                        -
+                        we will help you get the result.</p>
+                    <p class="main-about__info-text text">We can also help you create harmony out of seemingly
+                        completely
+                        incompatible elements in the interior or the exterior design. Do you want to combine classics
+                        and
+                        abstract art? Modern and retro? Love everything associated with the 1940's? No problem! </p>
+                    <div class="main-about__info-label">Discover more</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-about__info-block">
+            <div class="main-about__images-wrap">
+                <img src="./images/company-philosophy/about2.jpg" alt="design" class="main-about__img">
+                <img src="./images/company-philosophy/about3.jpg" alt="design" class="main-about__img">
+            </div>
+
+            <div class="main-about__info">
+                <div class="main-about__info-subtitle">
+                    Ceo company
+                </div>
+
+                <div class="main-about__info-content">
+                    <div class="main-about__info-blockquote-wrap">
+                        <div>
+                            <div class="main-about__info-blockquote-quotes">,,</div>
+                        </div>
+                        <blockquote class="main-about__info-blockquote">We can also help you create harmony out of
+                            seemingly
+                            completely incompatible elements in the interior or the exterior design.
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-our-projects section">
+    <div class="container">
+        <div class="our-projects__content">
+            <div class="our-projects__description">
+                <div class="our-projects__label">Projects</div>
+
+                <div class="our-projects__description-text">
+                    <h2 class="our-projects__title title">Our Projects</h2>
+
+                    <div class="our-projects__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Aliquam
+                        ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed,
+                        ornare pretium velit.
+                    </div>
+                </div>
+
+                <div class="our-projects__decor">We have more 56 project</div>
+            </div>
+
+            <div class="our-projects__catalog">
+                <div class="project-card">
+                    <a href="#" class="project-card__link">
+                        <div class="project-card__description">
+                            <ul class="project-card__description-list">
+                                <li class="project-card__description-list-item">Lodz</li>
+                                <li class="project-card__description-list-item">16.10.2018</li>
+                                <li class="project-card__description-list-item">80 sq.m</li>
+                            </ul>
+
+                            <div>
+                                <div class="project-card__description-name">Eyewear store interior</div>
+                                <div class="project-card__description-mode">Discover more</div>
+                            </div>
+                        </div>
+
+                        <div class="project-card__img-wrap">
+                            <img src="./images/our-projects/1.jpg" alt="design-project" class="project-card__img">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <a href="#" class="project-card__link">
+                        <div class="project-card__description">
+                            <ul class="project-card__description-list">
+                                <li class="project-card__description-list-item">Lodz</li>
+                                <li class="project-card__description-list-item">16.10.2018</li>
+                                <li class="project-card__description-list-item">80 sq.m</li>
+                            </ul>
+
+                            <div>
+                                <div class="project-card__description-name">Minimalist style home</div>
+                                <div class="project-card__description-mode">Discover more</div>
+                            </div>
+                        </div>
+
+                        <div class="project-card__img-wrap">
+                            <img src="./images/our-projects/2.jpg" alt="design-project" class="project-card__img">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <a href="#" class="project-card__link">
+                        <div class="project-card__description">
+                            <ul class="project-card__description-list">
+                                <li class="project-card__description-list-item">Lodz</li>
+                                <li class="project-card__description-list-item">16.10.2018</li>
+                                <li class="project-card__description-list-item">80 sq.m</li>
+                            </ul>
+
+                            <div>
+                                <div class="project-card__description-name">Residence by the lighthouse</div>
+                                <div class="project-card__description-mode">Discover more</div>
+                            </div>
+                        </div>
+
+                        <div class="project-card__img-wrap">
+                            <img src="./images/our-projects/3.jpg" alt="design-project" class="project-card__img">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <a href="#" class="project-card__link">
+                        <div class="project-card__description">
+                            <ul class="project-card__description-list">
+                                <li class="project-card__description-list-item">Lodz</li>
+                                <li class="project-card__description-list-item">16.10.2018</li>
+                                <li class="project-card__description-list-item">80 sq.m</li>
+                            </ul>
+
+                            <div>
+                                <div class="project-card__description-name">Eyewear store interior</div>
+                                <div class="project-card__description-mode">Discover more</div>
+                            </div>
+                        </div>
+
+                        <div class="project-card__img-wrap">
+                            <img src="./images/our-projects/4.jpg" alt="design-project" class="project-card__img">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="our-projects__more">
+                    <a href="#" class="our-projects__more-link">
+                        <div class="our-projects__more-title">See more 60 projects</div>
+
+                        <div class="our-projects__more-img-wrap">
+                            <img src="./images/our-projects/5.jpg" alt="design-project">
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="our-projects__info">
+                <div class="our-projects__bg-images">
+                    <div class="content">
+                        <img class="content__img" src="./images/our-projects/bg/1.jpg" alt="Some image"/>
+                        <img class="content__img" src="./images/our-projects/bg/2.jpg" alt="Some image"/>
+                        <img class="content__img" src="./images/our-projects/bg/3.jpg" alt="Some image"/>
+                        <img class="content__img" src="./images/our-projects/bg/4.jpg" alt="Some image"/>
+                        <img class="content__img" src="./images/our-projects/bg/1.jpg" alt="Some image"/>
+                        <img class="content__img" src="./images/our-projects/bg/2.jpg" alt="Some image"/>
+                        <img class="content__img" src="./images/our-projects/bg/3.jpg" alt="Some image"/>
+                        <img class="content__img" src="./images/our-projects/bg/4.jpg" alt="Some image"/>
+                        <img class="content__img" src="./images/our-projects/bg/1.jpg" alt="Some image"/>
+                        <img class="content__img" src="./images/our-projects/bg/2.jpg" alt="Some image"/>
+                        <img class="content__img" src="./images/our-projects/bg/3.jpg" alt="Some image"/>
+                        <img class="content__img" src="./images/our-projects/bg/4.jpg" alt="Some image"/>
+                        <img class="content__img" src="./images/our-projects/bg/1.jpg" alt="Some image"/>
+                        <img class="content__img" src="./images/our-projects/bg/2.jpg" alt="Some image"/>
+                        <img class="content__img" src="./images/our-projects/bg/3.jpg" alt="Some image"/>
+                        <img class="content__img" src="./images/our-projects/bg/4.jpg" alt="Some image"/>
+                    </div>
+                </div>
+
+                <div class="our-projects__info-content">
+                    <div class="our-projects__label">Make request</div>
+
+                    <div class="our-projects__info-block">
+                        <div class="our-projects__info-text_big title">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit.
+                        </div>
+                    </div>
+
+                    <div class="our-projects__info-block">
+                        <div class="our-projects__info-text_small">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante
+                            felis, aliquam eu enim sed, ornare pretium velit.
+                        </div>
+
+                        <button class="btn btn_full">Make request</button>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
 </section>
