@@ -13,11 +13,6 @@ const mainSwiper = new Swiper('.main-swiper', {
         nextEl: ".main-swiper__button-next",
         prevEl: ".main-swiper__button-prev",
     },
-    on: {
-        slideChange: function () {
-
-        },
-    },
     modules: [Navigation, Pagination, Controller]
 });
 
@@ -42,9 +37,20 @@ const pagingSwiper = new Swiper(".main-swiper", {
 
 mainSwiper.controller.control = pagingSwiper;
 
-let btnNext = document.getElementsByClassName('main-swiper__button-next2')
-btnNext[0].addEventListener('click', () => {
-    console.log('click')
+const btnNext = document.getElementsByClassName('main-swiper__button-next2')
 
-    mainSwiper.slideNext()
-})
+if(btnNext.length) {
+    btnNext[0].addEventListener('click', () => {
+        mainSwiper.slideNext()
+    })
+}
+
+const newsSwiper = new Swiper('.news-swiper', {
+    slidesPerView: 4,
+    spaceBetween: 48,
+    loop: true,
+    autoplay: true,
+    centeredSlides: true,
+    loopedSlides: 3,
+    modules: [Autoplay]
+});

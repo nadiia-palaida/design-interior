@@ -29,6 +29,14 @@
   margin-right: 141px;
 }
 
+.header__logo {
+  font-family: 'Montserrat Regular', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: $text-light;
+}
+
 .menu__list {
   display: flex;
 }
@@ -86,4 +94,18 @@
   color: $text-light;
   font-size: 11px;
   cursor: pointer;
+}
+
+.page-dark {
+  .menu__link, .language__active, .language__btn, .header__btn, .header__logo{
+    color: $text-dark;
+  }
+
+  .header__btn{
+    border-color: $text-dark;
+  }
+
+  .header.active {
+    background: rgba(255, 255, 255, 0.8)
+  }
 }

@@ -1,0 +1,109 @@
+.contacts__content {
+  position: relative;
+  padding-left: 121px;
+  padding-bottom: 119px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.contacts__label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: 8px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.13);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  white-space: nowrap;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(-100% - 13px);
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 1px;
+    height: 57px;
+    background: rgba(255, 255, 255, 0.04);
+  }
+}
+
+.contacts__title-wrap {
+  width: 75%;
+  margin-bottom: 72px;
+}
+
+.contacts__content-block {
+  width: 50%;
+
+  &:last-child {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.contacts__title {
+  margin-bottom: 24px;
+}
+
+.contacts__subtitle {
+  color: $text-light;
+  opacity: 0.6;
+}
+
+.contacts__info-wrap {
+  display: flex;
+  margin-bottom: 72px;
+  justify-content: space-between;
+  color: $text-light;
+}
+
+.contacts__info-city {
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.contacts__info-text {
+  font-family: 'Montserrat Light', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  line-height: 13px;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__email {
+  margin-bottom: 23px;
+  font-family: "Montserrat SemiBold", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: $text-light;
+}
+
+.contacts__social-list {
+  display: flex;
+  color: $text-light;
+}
+
+.contacts__social-item {
+  margin-right: 16px;
+  font-family: "Montserrat SemiBold", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

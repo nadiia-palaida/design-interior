@@ -18,18 +18,9 @@
         let posx = 0;
         let posy = 0;
         if (!ev) ev = window.event;
-    /*    if (ev.pageX || ev.pageY) {
+
             posx = ev.clientX
             posy = ev.clientY
-        }
-        else if (ev.clientX || ev.clientY) 	{*/
-            posx = ev.clientX
-            posy = ev.clientY
-        // }
-
-        // console.log('mousePos', {x: posx, y: posy})
-
-
         return {x: posx, y: posy};
     }
 
@@ -40,7 +31,9 @@
     let mousePos = lastMousePos = cacheMousePos = {x: 0, y: 0};
 
     // update the mouse position
-    projects.addEventListener('mousemove', ev => mousePos = getMousePos(ev));
+    if(projects) {
+        projects.addEventListener('mousemove', ev => mousePos = getMousePos(ev));
+    }
 
     // gets the distance from the current mouse position to the last recorded mouse position
     const getMouseDistance = () => MathUtils.distance(mousePos.x,mousePos.y,lastMousePos.x,lastMousePos.y);
@@ -85,7 +78,9 @@
             this.DOM = {content: document.querySelector('.content')};
             // array of Image objs, one per image element
             this.images = [];
-            [...this.DOM.content.querySelectorAll('img')].forEach(img => this.images.push(new Image(img)));
+            if(this.DOM.content) {
+                [...this.DOM.content.querySelectorAll('img')].forEach(img => this.images.push(new Image(img)));
+            }
             // total number of images
             this.imagesTotal = this.images.length;
             // upcoming image index

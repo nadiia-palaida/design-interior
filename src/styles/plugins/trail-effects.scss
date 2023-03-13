@@ -10,19 +10,9 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 }
 
 body {
-  --color-text: #262523;
-  --color-bg: #efece5;
-  --color-link: #eca324;
-  --color-link-hover: #262523;
-  --color-title: #ffffff;
   --img-maxwidth: 250px;
   --blendmode-title: difference;
   --filter-img: none;
-  color: var(--color-text);
-  background-color: var(--color-bg);
-  font-family: quiroh, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Page Loader */
