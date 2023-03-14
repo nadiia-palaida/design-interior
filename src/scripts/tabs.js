@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', function () {
     let tabs = document.querySelectorAll('.news__tab'),
         tabContent = document.querySelectorAll('.tabs-content')
 
-    if(tabs.length) {
+    if(tabs.length && tabContent.length) {
         tabs.forEach(item => {
             item.addEventListener('click', (e) => {
                 hideTabContent(0)

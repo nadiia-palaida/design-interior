@@ -39,7 +39,7 @@ mainSwiper.controller.control = pagingSwiper;
 
 const btnNext = document.getElementsByClassName('main-swiper__button-next2')
 
-if(btnNext.length) {
+if (btnNext.length) {
     btnNext[0].addEventListener('click', () => {
         mainSwiper.slideNext()
     })
@@ -54,3 +54,43 @@ const newsSwiper = new Swiper('.news-swiper', {
     loopedSlides: 3,
     modules: [Autoplay]
 });
+
+const aboutSwiper = new Swiper('.about-philosophy__description-swiper', {
+    slidesPerView: "auto",
+    spaceBetween: 12,
+    loop: true,
+    centeredSlides: true,
+    loopedSlides: 1,
+    pagination: {
+        el: ".about-philosophy__description-swiper-pagination",
+        type: "progressbar",
+    },
+    navigation: {
+        nextEl: ".about-philosophy__description-swiper-button-next",
+        prevEl: ".about-philosophy__description-swiper-button-prev",
+    },
+    modules: [Pagination, Navigation, Controller]
+});
+
+const aboutSwiper2 = new Swiper(".about-philosophy__description-swiper", {
+    slidesPerView: "auto",
+    spaceBetween: 12,
+    loop: true,
+    centeredSlides: true,
+    loopedSlides: 1,
+    pagination: {
+        el: ".about-philosophy__description-swiper-pagination2",
+        type: "fraction",
+        renderFraction: function (currentClass, totalClass) {
+            return '<span class="main-swiper__fraction-current main-swiper__fraction about-philosophy__description-swiper__fraction">0<span class="' + currentClass + '"></span></span>' + '<span class="main-swiper__fraction-total main-swiper__fraction about-philosophy__description-swiper__fraction">0<span class="' + totalClass + '"></span></span>';
+        },
+    },
+    on: {
+        slideChange: function (swiper) {
+            swiper.pagination.update()
+        },
+    },
+    modules: [Pagination]
+});
+
+aboutSwiper.controller.control = aboutSwiper2;

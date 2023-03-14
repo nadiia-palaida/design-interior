@@ -1,0 +1,225 @@
+.section-about-main {
+  min-height: 500px;
+  height: calc(100vh - 96px);
+}
+
+.about-main-wrap {
+  height: 100%;
+  margin-top: 96px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url("./images/about/1.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.about-main__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-main__text-wrap {
+  width: 30%;
+  text-align: center;
+}
+
+.about-main__text {
+  color: $text-light;
+}
+
+.about-philosophy__description {
+  display: flex;
+}
+
+.about-philosophy__description-wrap {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 5;
+  background: #fff;
+}
+
+.about-philosophy__description-title {
+  color: $text-dark;
+  margin-bottom: 24px;
+}
+
+.about-philosophy__description-text-wrap {
+  width: 60%;
+  margin-bottom: 49px;
+}
+
+.about-philosophy__description-swiper {
+  display: flex;
+}
+
+.about-experience {
+  padding-top: 0;
+  background: url("./images/about/5.jpg") no-repeat bottom 20% right;
+}
+
+.about-experience__content {
+  padding-left: 66px;
+  display: flex;
+}
+
+.about-experience__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: calc(50%);
+  padding-left: 135px;
+}
+
+.about-experience__info-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.about-experience__info-list-item {
+  margin-right: 79px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.info-item-number__title {
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: 56px;
+  line-height: 68px;
+  color: $text-dark;
+}
+
+.info-item-number__text {
+  width: 65%;
+}
+
+.about-experience__info-number {
+  margin-bottom: 44px;
+}
+
+.about-ceo {
+  padding-top: 0;
+}
+
+.about-ceo__content {
+  display: flex;
+}
+
+.about-ceo__img-wrap {
+  width: 50%;
+  padding-right: 84px;
+
+}
+
+.about-ceo__text-wrap {
+  width: 50%;
+  padding-top: 64px;
+}
+
+.about-ceo__text-block {
+  margin-bottom: 164px;
+}
+
+.about-ceo__img-description {
+  position: relative;
+  left: -50px;
+}
+
+.text-container.text-container_about-ceo {
+  margin-right: 0;
+}
+
+.about-ceo__title {
+  color: $text-dark;
+  margin-bottom: 32px;
+}
+
+.about-ceo__subtitle {
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: 16px;
+  width: 40%;
+  margin-bottom: 56px;
+}
+
+.about-ceo__text {
+  position: relative;
+  line-height: 34px;
+  width: 60%;
+}
+
+.about-ceo__text-quotes {
+  position: absolute;
+  left: -40px;
+  top: 12px;
+  transform: rotate(180deg);
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: 36px;
+  color: $text-dark;
+  letter-spacing: 0.01em;
+}
+
+.about-ceo__img-ceo-wrap {
+  margin-bottom: 100px;
+}
+
+.about-ceo__info-list {
+  display: flex;
+  margin-bottom: 37px;
+}
+
+.contact-us__title {
+  width: 40%;
+  color: $text-dark;
+  margin-bottom: 131px;
+}
+
+.contact-us__block-wrap {
+  display: flex;
+}
+
+.contact-us__block {
+  width: 50%;
+
+  &:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+.contact-us__form {
+  width: 75%;
+}
+
+.contact-us__text {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.contact-us__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-us__info-text {
+  font-family: "Montserrat SemiBold", sans-serif;
+  font-size: 11px;
+  color: $text-dark;
+}
+
+.contact-us__info-socials {
+  display: flex;
+}
+
+.contact-us__info-socials-item {
+  margin-right: 16px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

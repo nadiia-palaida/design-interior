@@ -49,9 +49,9 @@
 }
 
 .main-swiper__slide.swiper-slide-active {
-    .main-swiper__img-wrap::after {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24))
-    }
+  .main-swiper__img-wrap::after {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24))
+  }
 }
 
 .main-swiper__item-content {
@@ -115,52 +115,56 @@
   z-index: 10;
 }
 
-.main-swiper__pagination {
+.custom-swiper__pagination {
   left: 50% !important;
   top: 50% !important;
   width: 186px !important;
   height: 1px !important;
   background: rgba(255, 255, 255, .32) !important;
-  transform: translateX(-50%)!important;
+  transform: translateX(-50%) !important;
 
   .swiper-pagination-progressbar-fill {
     background: #fff !important;
   }
 }
 
-.main-swiper__button-nav {
-  width: 20px!important;
+.custom-swiper__button-nav {
+  width: 20px !important;
+
+  svg {
+    color: #fff;
+  }
 }
 
-.main-swiper__button-prev {
+.custom-swiper__button-prev {
   position: absolute;
   left: 0px !important;
 }
 
-.main-swiper__button-next {
+.custom-swiper__button-next {
   position: absolute;
   right: 0px !important;
 }
 
 .main-swiper__button-next2 {
   position: absolute;
-  left: calc(80% + 44px)!important;
-  top: calc(100% - 50px)!important;
+  left: calc(80% + 44px) !important;
+  top: calc(100% - 50px) !important;
   font-family: "Montserrat SemiBold", sans-serif;
   font-size: 11px;
-  color: $text-light!important;
+  color: $text-light !important;
   writing-mode: vertical-rl;
   text-orientation: mixed;
   transform: rotate(180deg) translateY(75%);
-  z-index: 20!important;
-  height: auto!important;
+  z-index: 20 !important;
+  height: auto !important;
   white-space: nowrap;
 }
 
-.main-swiper__pagination2 {
+.custom-swiper__pagination2 {
   position: absolute !important;
   left: 0;
-  top: 0!important;
+  top: 0 !important;
   height: 100%;
   display: flex;
   align-items: center;
@@ -188,7 +192,8 @@
   position: absolute;
   left: 63px;
   bottom: 48px;
-  writing-mode: vertical-rl;text-orientation: mixed;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
   transform: rotate(180deg);
   font-family: "Montserrat Bold", sans-serif;
   font-size: 48px;
@@ -204,3 +209,43 @@
   }
 }
 
+.swiper.about-philosophy__description-swiper {
+  display: flex;
+}
+
+.swiper-wrapper.about-philosophy__description-swiper-wrapper {
+  width: 40%;
+  //padding-left: 50%;
+}
+
+.swiper-slide.about-philosophy__description-swiper-slide {
+  width: auto;
+}
+
+.about-philosophy__description-swiper-navigation {
+  position: relative;
+  z-index: 6;
+  width: 294px;
+}
+
+.custom-swiper__pagination.about-philosophy__description-swiper-pagination {
+  background: rgba(130, 130, 130, 0.32) !important;
+
+  .swiper-pagination-progressbar-fill {
+    background: rgba(130, 130, 130, 0.5)!important;
+  }
+}
+
+.about-philosophy__description-swiper-button-nav {
+  padding: 0 5px;
+  z-index: 12;
+
+  svg {
+    color: #828282;
+  }
+}
+
+.about-philosophy__description-swiper__fraction {
+  color: #828282;
+  opacity: 0.5;
+}

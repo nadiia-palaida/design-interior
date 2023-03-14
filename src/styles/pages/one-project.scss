@@ -1,0 +1,131 @@
+.section-one-project-main {
+  height: 100vh;
+  min-height: 500px;
+  padding-top: 96px;
+  padding-bottom: 40px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url('./images/one-project/1.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.one-project-main__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.one-project-main__content-text {
+  height: 100%;
+  padding-bottom: 96px;
+  display: flex;
+  align-items: center;
+}
+
+.one-project-main__text-wrap {
+  width: 55%;
+}
+
+.one-project-main__title {
+  margin-bottom: 24px;
+}
+
+.one-project-main__text {
+  color: $text-light;
+  margin-bottom: 64px;
+}
+
+.one-project-main__info-list {
+  display: flex;
+  align-items: center;
+}
+
+.one-project-main__info-item {
+  display: flex;
+  align-items: center;
+  margin-right: 32px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.one-project-main__info-icon {
+  margin-right: 12px;
+}
+
+.one-project-main__info-text {
+  font-family: "Montserrat SemiBold", sans-serif;
+  font-size: 11px;
+  color: $text-light;
+  opacity: 0.7;
+}
+
+.one-project-main__footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  transform: translateX(-2%);
+}
+
+.one-project-main__footer-title {
+  margin-right: 111px;
+  font-family: 'Montserrat Medium', sans-serif;
+  font-size: 14px;
+  color: $text-light;
+}
+
+.one-project-main__socials-list {
+  display: flex;
+  align-items: center;
+}
+
+.one-project-main__socials-item {
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.one-project-about__photos {
+  margin-bottom: 80px;
+}
+
+.one-project-about__btn {
+  display: flex;
+  justify-content: center;
+}
+
+.section-one-project-next {
+  padding-bottom: 40px;
+  background: radial-gradient(50% 50% at 50% 50%, #0F0F0F 0%, #080808 100%);
+}
+
+.section-one-project-next {
+  padding-top: 0px;
+}
+
+.one-project-next__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.one-project-next__label {
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: 8px;
+  color: $text-gray;
+  text-transform: uppercase;
+  line-height: 14px;
+}
+
+.one-project-next__link {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.one-project-next__photo {
+  transform: translateY(250px);
+}

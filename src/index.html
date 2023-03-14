@@ -103,17 +103,17 @@
         </div>
 
         <div class="main-swiper__navigation">
-            <div class="swiper-button-prev main-swiper__button-prev main-swiper__button-nav">
+            <div class="swiper-button-prev main-swiper__button-prev main-swiper__button-nav custom-swiper__button-nav custom-swiper__button-prev">
                 <svg viewBox="0 0 4 8" width="4" height="8">
                     <use xlink:href="./images/icons/sprite.svg#arrow-navigation-left"></use>
                 </svg>
             </div>
 
-            <div class="swiper-pagination main-swiper__pagination"></div>
+            <div class="swiper-pagination main-swiper__pagination custom-swiper__pagination"></div>
 
-            <div class="swiper-pagination main-swiper__pagination2"></div>
+            <div class="swiper-pagination main-swiper__pagination2 custom-swiper__pagination2"></div>
 
-            <div class="swiper-button-next main-swiper__button-next main-swiper__button-nav">
+            <div class="swiper-button-next main-swiper__button-next main-swiper__button-nav custom-swiper__button-nav custom-swiper__button-next">
                 <svg viewBox="0 0 4 8" width="4" height="8">
                     <use xlink:href="./images/icons/sprite.svg#arrow-navigation-right"></use>
                 </svg>
@@ -160,8 +160,6 @@
             </div>
         </div>
     </div>
-
-
 </section>
 
 <section class="section-main-about main-about section">
@@ -331,156 +329,16 @@
                 </div>
             </div>
 
-            <div class="our-projects__info">
-                <div class="our-projects__bg-images">
-                    <div class="content">
-                        <img class="content__img" src="./images/our-projects/bg/1.jpg" alt="Some image"/>
-                        <img class="content__img" src="./images/our-projects/bg/2.jpg" alt="Some image"/>
-                        <img class="content__img" src="./images/our-projects/bg/3.jpg" alt="Some image"/>
-                        <img class="content__img" src="./images/our-projects/bg/4.jpg" alt="Some image"/>
-                        <img class="content__img" src="./images/our-projects/bg/1.jpg" alt="Some image"/>
-                        <img class="content__img" src="./images/our-projects/bg/2.jpg" alt="Some image"/>
-                        <img class="content__img" src="./images/our-projects/bg/3.jpg" alt="Some image"/>
-                        <img class="content__img" src="./images/our-projects/bg/4.jpg" alt="Some image"/>
-                        <img class="content__img" src="./images/our-projects/bg/1.jpg" alt="Some image"/>
-                        <img class="content__img" src="./images/our-projects/bg/2.jpg" alt="Some image"/>
-                        <img class="content__img" src="./images/our-projects/bg/3.jpg" alt="Some image"/>
-                        <img class="content__img" src="./images/our-projects/bg/4.jpg" alt="Some image"/>
-                        <img class="content__img" src="./images/our-projects/bg/1.jpg" alt="Some image"/>
-                        <img class="content__img" src="./images/our-projects/bg/2.jpg" alt="Some image"/>
-                        <img class="content__img" src="./images/our-projects/bg/3.jpg" alt="Some image"/>
-                        <img class="content__img" src="./images/our-projects/bg/4.jpg" alt="Some image"/>
-                    </div>
-                </div>
-
-                <div class="our-projects__info-content">
-                    <div class="our-projects__label">Make request</div>
-
-                    <div class="our-projects__info-block">
-                        <div class="our-projects__info-text_big title">Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit.
-                        </div>
-                    </div>
-
-                    <div class="our-projects__info-block">
-                        <div class="our-projects__info-text_small">Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante
-                            felis, aliquam eu enim sed, ornare pretium velit.
-                        </div>
-
-                        <button class="btn btn_full">Make request</button>
-                    </div>
-                </div>
-            </div>
+            @@include('components/_make-request.html')
         </div>
     </div>
 </section>
 
-<section class="section section-gallery">
-    <div class="gallery__photos">
-        <div class="gallery__photo-wrap">
-            <img src="./images/gallery/1.jpg" alt="design" class="gallery__photo">
-        </div>
-        <div class="gallery__photo-wrap">
-            <img src="./images/gallery/2.jpg" alt="design" class="gallery__photo">
-        </div>
-        <div class="gallery__photo-wrap">
-            <img src="./images/gallery/3.jpg" alt="design" class="gallery__photo">
-        </div>
-        <div class="gallery__photo-wrap">
-            <img src="./images/gallery/4.jpg" alt="design" class="gallery__photo">
-        </div>
-        <div class="gallery__photo-wrap">
-            <img src="./images/gallery/5.jpg" alt="design" class="gallery__photo">
-        </div>
-        <div class="gallery__photo-wrap">
-            <img src="./images/gallery/6.jpg" alt="design" class="gallery__photo">
-        </div>
-        <div class="gallery__photo-wrap">
-            <img src="./images/gallery/7.jpg" alt="design" class="gallery__photo">
-        </div>
-        <div class="gallery__photo-wrap">
-            <img src="./images/gallery/8.jpg" alt="design" class="gallery__photo">
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="gallery__content">
-            <div class="gallery__text-wrap">
-                <div class="gallery__title">@lorem.ipsum</div>
-
-                <div class="gallery__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                    ullamcorper
-                    eu mauris vitae posuere.
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+@@include('components/_gallery.html')
 
 <section class="section section-contacts contacts">
     <div class="container">
-        <div class="contacts__content">
-            <div class="contacts__label">Contacts</div>
-
-            <div class="contacts__content-block">
-                <div class="contacts__title-wrap">
-                    <h2 class="contacts__title title">Drop us a line</h2>
-                    <div class="contacts__subtitle text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Aliquam ullamcorper
-                        eu mauris vitae posuere.
-                    </div>
-                </div>
-
-                <div class="contacts__info-wrap">
-                    <div class="contacts__info-item">
-                        <div class="contacts__info-city">Kyiv</div>
-
-                        <div class="contacts__info-text"><a href="tel:(209) 555-0104">(209) 555-0104</a></div>
-                        <div class="contacts__info-text">6391 Elgin St. Celina,</div>
-                        <div class="contacts__info-text">Delaware 10299</div>
-                    </div>
-
-                    <div class="contacts__info-item">
-                        <div class="contacts__info-city">Lviv</div>
-
-                        <div class="contacts__info-text"><a href="tel:(209) 555-0104">(209) 555-0104</a></div>
-                        <div class="contacts__info-text">6391 Elgin St. Celina,</div>
-                        <div class="contacts__info-text">Delaware 10299</div>
-                    </div>
-
-                    <div class="contacts__info-item">
-                        <div class="contacts__info-city">Kharkiv</div>
-
-                        <div class="contacts__info-text"><a href="tel:(209) 555-0104">(209) 555-0104</a></div>
-                        <div class="contacts__info-text">6391 Elgin St. Celina,</div>
-                        <div class="contacts__info-text">Delaware 10299</div>
-                    </div>
-                </div>
-
-                <button class="btn btn_full">Make request</button>
-            </div>
-
-            <div class="contacts__content-block">
-                <div>
-                    <div class="contacts__email">
-                        <a href="mailto: info@gmail.com">info@gmail.com</a>
-                    </div>
-
-                    <ul class="contacts__social-list">
-                        <li class="contacts__social-item">
-                            <a href="#">Fb</a>
-                        </li>
-                        <li class="contacts__social-item">
-                            <a href="#">In</a>
-                        </li>
-                        <li class="contacts__social-item">
-                            <a href="#">Be</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        @@include('components/_contacts.html')
     </div>
 
     @@include('components/_footer.html')

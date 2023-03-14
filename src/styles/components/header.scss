@@ -97,15 +97,32 @@
 }
 
 .page-dark {
-  .menu__link, .language__active, .language__btn, .header__btn, .header__logo{
+  .menu__link, .language__active, .language__btn, .btn_empty, .header__logo, .our-projects__info-text_big, .our-projects__info-text_small, .footer__partner-text{
     color: $text-dark;
   }
 
-  .header__btn{
+  .btn_empty {
     border-color: $text-dark;
+  }
+
+  .btn_full {
+    background: none;
+    border: 1px solid $text-dark;
   }
 
   .header.active {
     background: rgba(255, 255, 255, 0.8)
+  }
+
+  .section-gallery {
+    background: $text-dark;
+  }
+
+  .gallery__title, .gallery__text {
+    color: $text-light;
+  }
+
+  .gallery__text {
+    opacity: 0.6;
   }
 }

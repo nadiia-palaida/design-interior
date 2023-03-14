@@ -8,6 +8,12 @@
   }
 }
 
+.one-news__top-block_projects {
+  &:last-child {
+    align-items: flex-start;
+  }
+}
+
 .one-news__content {
   position: relative;
 

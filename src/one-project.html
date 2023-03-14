@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('components/_head.html')
+
+<body>
+
+@@include('components/_header.html')
+
+<section class="section-one-project-main">
+    <div class="container">
+        <div class="one-project-main__content">
+            <div class="text-container one-project-main__content-text">
+                <div class="one-project-main__text-wrap">
+                    <h1 class="one-project-main__title title">Residence by the lighthouse</h1>
+
+                    <div class="one-project-main__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Aliquam ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim
+                        sed, ornare pretium velit.
+                    </div>
+
+                    <ul class="one-project-main__info-list">
+                        <li class="one-project-main__info-item">
+                            <svg viewBox="0 0 16 16" width="16" height="16" class="one-project-main__info-icon">
+                                <use xlink:href="./images/icons/sprite.svg#point"></use>
+                            </svg>
+                            <span class="one-project-main__info-text">Lodz, Poland</span>
+                        </li>
+                        <li class="one-project-main__info-item">
+                            <svg viewBox="0 0 16 16" width="16" height="16" class="one-project-main__info-icon">
+                                <use xlink:href="./images/icons/sprite.svg#calendar"></use>
+                            </svg>
+                            <span class="one-project-main__info-text">16.10.2018</span>
+                        </li>
+                        <li class="one-project-main__info-item">
+                            <svg viewBox="0 0 16 16" width="16" height="16" class="one-project-main__info-icon">
+                                <use xlink:href="./images/icons/sprite.svg#ruler"></use>
+                            </svg>
+                            <span class="one-project-main__info-text">80 sq.m</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="one-project-main__footer">
+                <div class="one-project-main__footer-title">Share:</div>
+
+                <ul class="one-project-main__socials-list">
+                    <li class="one-project-main__socials-item">
+                        <a href="#"><img src="./images/socials/facebook-empty.svg" alt="facebook"></a>
+                    </li>
+                    <li class="one-project-main__socials-item">
+                        <a href="#"><img src="./images/socials/twitter-empty.svg" alt="facebook"></a>
+                    </li>
+                    <li class="one-project-main__socials-item">
+                        <a href="#"><img src="./images/socials/linkedin-empty.svg" alt="facebook"></a>
+                    </li>
+                    <li class="one-project-main__socials-item">
+                        <a href="#"><img src="./images/socials/link-empty.svg" alt="facebook"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-one-project-about">
+    <div class="container">
+        <div class="one-project-about__content">
+
+            <div class="text-container">
+                <div class="one-news__text-wrap">
+                    <div class="one-news__text-subtitle">Duis laoreet finibus consectetur.
+                    </div>
+
+                    <p class="one-news__text text">
+                        Duis laoreet finibus consectetur. Nullam pulvinar ex sit amet leo gravida, sed mattis enim
+                        vehicula. Duis purus nisl, consectetur ut est non, placerat eleifend turpis. Duis auctor
+                        suscipit arcu. Aenean leo est, rutrum a eleifend eget, tempor nec urna. Proin finibus
+                        lobortis
+                        arcu dictum convallis. Ut fermentum eu magna vel laoreet. In lacus augue, malesuada id elit
+                        sit
+                        amet, varius imperdiet ex. Nullam blandit lobortis posuere:
+                    </p>
+
+                    <div class="card-news__mode">Discover more</div>
+                </div>
+            </div>
+
+            <div class="one-project-about__photos">
+                <div class="one-news__img-wrap">
+                    <img src="./images/one-project/2.jpg" alt="design photo" class="one-news__img">
+
+                    <div class="imgs__wrap-some">
+                        <img src="./images/one-project/3.jpg" alt="design photo" class="one-news__img one-news__img_small">
+                        <img src="./images/one-project/4.jpg" alt="design photo" class="one-news__img one-news__img_small">
+                    </div>
+
+                    <img src="./images/one-project/5.jpg" alt="design photo" class="one-news__img">
+                </div>
+            </div>
+
+            <div class="one-project-about__btn">
+                <button class="btn btn_empty btn_dark">View more photo</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-one-project-next">
+    <div class="container">
+        @@include('components/_make-request.html')
+
+        <div class="one-project-next__content">
+            <a href="#" class="one-project-next__link">
+                <div class="one-project-next__label">Next project</div>
+                <h2 class="title">Perfect proportions</h2>
+            </a>
+
+            <img src="./images/one-project/2.jpg" alt="design-photo" class="one-project-next__photo">
+        </div>
+    </div>
+</section>
+
+<script src="main.min.js"></script>
+</body>
+</html>
