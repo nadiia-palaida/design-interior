@@ -1,9 +1,9 @@
-.contacts-page__body {
+.full-page__body {
   background: radial-gradient(50% 50% at 50% 50%, rgba(15, 15, 15, 0.95) 0%, rgba(8, 8, 8, 0.95) 100%), url('./images/contacts/contacts-bg.png') no-repeat center;
   background-size: cover;
 }
 
-.contacts-page {
+.full-page {
   min-height: 500px;
 
   .contacts__content {
@@ -17,22 +17,22 @@
   }
 }
 
-.contacts-page__wrap {
+.full-page__wrap {
   padding-top: 96px;
   height: calc(100vh - 60px);
 }
 
-.contacts-page__content {
+.full-page__content {
   height: calc(100% - 60px);
 }
 
-.contacts-page__content-wrap {
+.full-page__content-wrap {
   height: 100%;
   display: flex;
   align-items: center;
 }
 
-.contacts-page__footer {
+.full-page__footer {
   height: 80px;
   width: 100%;
   position: absolute;
