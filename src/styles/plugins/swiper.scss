@@ -30,7 +30,7 @@
 }
 
 .main-swiper__slide {
-  width: 80% !important;
+  width: 82% !important;
 }
 
 .main-swiper__img-wrap {
@@ -148,7 +148,7 @@
 
 .main-swiper__button-next2 {
   position: absolute;
-  left: calc(80% + 44px) !important;
+  left: calc(82% + 44px) !important;
   top: calc(100% - 50px) !important;
   font-family: "Montserrat SemiBold", sans-serif;
   font-size: 11px;
@@ -190,7 +190,7 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  left: 63px;
+  left: 80px;
   bottom: 48px;
   writing-mode: vertical-rl;
   text-orientation: mixed;
@@ -248,4 +248,25 @@
 .about-philosophy__description-swiper__fraction {
   color: #828282;
   opacity: 0.5;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-swiper__item-title {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+
+  .main-swiper__slide {
+    width: 85%!important;
+  }
+
+  .main-swiper__item-left-title {
+    font-size: 32px;
+    line-height: 31px;
+    left: 64px;
+  }
+
+  .main-swiper__button-next2 {
+    left: calc(85% + 39px) !important;
+  }
 }

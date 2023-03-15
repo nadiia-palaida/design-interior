@@ -55,11 +55,11 @@ body {
 
 @media (min-width: 992px) {
   .container {
-    max-width: 960px;
+    max-width: 912px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1315px) {
   .container {
     max-width: 1314px;
   }
@@ -439,4 +439,10 @@ input::placeholder {
   display: flex;
   align-items: center;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .section {
+    padding: 124px 0;
+  }
 }

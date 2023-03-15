@@ -1,8 +1,7 @@
 .section-main {
-  min-height: 744px;
+  min-height: 700px;
   height: 100vh;
 }
-
 
 .main-info {
   width: 100%;
@@ -425,5 +424,33 @@
     background: radial-gradient(50% 50% at 50% 50%, #0F0F0F 0%, #080808 100%);
     opacity: 0.95;
     z-index: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .select-city {
+    background: transparent;
+    border: 1px solid #C4C4C4;
+    border-radius: 88px;
+    backdrop-filter: none;
+  }
+
+  .main-info.fixed {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+  }
+
+  .section-main-about {
+    padding-top: 180px;
+    background-size: 35%;
+  }
+
+  .main-about__info-subtitle {
+    margin-right: 92px;
+  }
+
+  .main-about__info {
+    width: 60%;
   }
 }
