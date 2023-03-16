@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+</head>
+
+<body class="page-dark">
+
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__content">
+            <div class="header__content-block">
+                <div class="header__logo-wrap">
+                    <a href="index.html" class="header__logo">
+                        LOGO
+                    </a>
+                </div>
+
+                <div class="menu__block-wrap">
+                    <div class="menu">
+                        <button class="menu__mobile-btn menu__mobile-btn__logo" id="menu-btn">
+                            <div class="menu__mobile-icon">
+                                <div class="menu__mobile-icon__line"></div>
+                                <div class="menu__mobile-icon__line"></div>
+                            </div>
+                            <div class="menu__mobile-title">Menu</div>
+                        </button>
+
+                        <div class="menu__list-wrap">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="projects.html" class="menu__link">Projects</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="about.html" class="menu__link">About us</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="news.html" class="menu__link">Blog</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="contact.html" class="menu__link">Contacts</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="language-wrap">
+                        <div class="language">
+                            <button class="language__active">En</button>
+
+                            <ul class="language__list">
+                                <li class="language__item">
+                                    <button class="language__btn">
+                                        UA
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button class="header__btn btn btn_empty make-request-btn">Send Request</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="section-about-main about-main">
+    <div class="about-main-wrap">
+        <div class="container">
+            <div class="about-main__content">
+                <div class="about-main__text-wrap">
+                    <h1 class="title">Company Philosophy </h1>
+
+                    <div class="about-main__text text">The basic philosophy of our studio is to create individual,
+                        aesthetically stunning
+                        solutions for our customers by lightning-fast development of projects employing unique styles
+                        and
+                        architecture.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section about-philosophy">
+    <div class="news-swiper__container">
+        <div class="about-philosophy__description">
+
+            <div class="swiper about-philosophy__description-swiper">
+                <div class="about-philosophy__description-wrap">
+                    <div class="about-philosophy__description-text-wrap">
+                        <h2 class="about-philosophy__description-title title">Company Philosophy</h2>
+
+                        <div class="about-philosophy__description-text text">The basic philosophy of our studio is to
+                            create individual, aesthetically stunning
+                            solutions for our customers by lightning-fast development of projects employing unique
+                            styles and
+                            architecture.
+                        </div>
+                    </div>
+                    <div class="about-philosophy__description-swiper-navigation">
+                        <div class="swiper-button-prev about-philosophy__description-swiper-button-prev about-philosophy__description-swiper-button-nav  custom-swiper__button-nav custom-swiper__button-prev">
+                            <svg viewBox="0 0 4 8" width="4" height="8">
+                                <use xlink:href="./images/icons/sprite.svg#arrow-navigation-left"></use>
+                            </svg>
+                        </div>
+
+                        <div class="swiper-pagination about-philosophy__description-swiper-pagination custom-swiper__pagination"></div>
+
+                        <div class="swiper-pagination about-philosophy__description-swiper-pagination2 custom-swiper__pagination2"></div>
+
+                        <div class="swiper-button-next about-philosophy__description-swiper-button-next about-philosophy__description-swiper-button-nav  custom-swiper__button-nav custom-swiper__button-next">
+                            <svg viewBox="0 0 4 8" width="4" height="8">
+                                <use xlink:href="./images/icons/sprite.svg#arrow-navigation-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-wrapper about-philosophy__description-swiper-wrapper">
+                    <div class="swiper-slide about-philosophy__description-swiper-slide">
+                        <img src="./images/about/2.jpg" alt="design" class="card-latest-news__img">
+                    </div>
+                    <div class="swiper-slide about-philosophy__description-swiper-slide">
+                        <img src="./images/about/3.jpg" alt="design" class="card-latest-news__img">
+                    </div>
+                    <div class="swiper-slide about-philosophy__description-swiper-slide">
+                        <img src="./images/about/2.jpg" alt="design" class="card-latest-news__img">
+                    </div>
+                    <div class="swiper-slide about-philosophy__description-swiper-slide">
+                        <img src="./images/about/3.jpg" alt="design" class="card-latest-news__img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section about-experience">
+    <div class="container">
+        <div class="about-experience__content">
+            <div class="about-experience__img-wrap">
+                <img src="./images/about/4.jpg" alt="design" class="about-experience__img">
+            </div>
+
+            <div class="about-experience__info">
+                <ul class="about-experience__info-list">
+                    <li class="about-experience__info-list-item">
+                        <div class="info-item-number about-experience__info-number">
+                            <div class="info-item-number__title">6</div>
+                            <div class="info-item-number__text text">years expertise</div>
+                        </div>
+                        <div class="info-item-number about-experience__info-number">
+                            <div class="info-item-number__title">100+</div>
+                            <div class="info-item-number__text text">years expertise</div>
+                        </div>
+                    </li>
+                    <li class="about-experience__info-list-item">
+                        <div class="info-item-number about-experience__info-number">
+                            <div class="info-item-number__title">25+</div>
+                            <div class="info-item-number__text text">companies cooperate</div>
+                        </div>
+                        <div class="info-item-number about-experience__info-number">
+                            <div class="info-item-number__title">2014</div>
+                            <div class="info-item-number__text text">year of market entry</div>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="text">The basic philosophy of our studio is to create individual, aesthetically stunning
+                    solutions for our customers by lightning-fast development of projects employing unique styles and
+                    architecture.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section about-ceo">
+    <div class="container">
+        <div class="text-container text-container_about-ceo">
+            <div class="about-ceo__content">
+                <div class="about-ceo__text-wrap">
+                    <div class="about-ceo__text-block">
+                        <div class="about-ceo__title-wrap">
+                            <h2 class="about-ceo__title title">Roman Viktorovich </h2>
+                            <div class="about-ceo__subtitle">Founder and CEO of Hilight</div>
+                        </div>
+
+                        <div class="about-ceo__text">
+                            <span class="about-ceo__text-quotes">,,</span>
+                            We can also help you create harmony out of seemingly completely incompatible elements in the
+                            interior or the exterior design.
+                        </div>
+                    </div>
+                    <div class="about-ceo__img-description">
+                        <img src="./images/about/7.jpg" alt="design" class="about-ceo__img">
+                    </div>
+                </div>
+                <div class="about-ceo__img-wrap">
+                    <div class="about-ceo__img-ceo-wrap">
+                        <img src="./images/about/6.jpg" alt="design" class="about-ceo__img">
+                    </div>
+
+                    <ul class="about-ceo__info-list">
+                        <li class="about-ceo__info-list-item">
+                            <div class="info-item-number about-experience__info-number">
+                                <div class="info-item-number__title">5</div>
+                                <div class="info-item-number__text text">companies cooperate</div>
+                            </div>
+                        </li>
+                        <li class="about-ceo__info-list-item">
+                            <div class="info-item-number about-experience__info-number">
+                                <div class="info-item-number__title">4</div>
+                                <div class="info-item-number__text text">year of market entry
+                                </div>
+                            </div>
+                        </li>
+                        <li class="about-ceo__info-list-item">
+                            <div class="info-item-number about-experience__info-number">
+                                <div class="info-item-number__title">3</div>
+                                <div class="info-item-number__text text">companies cooperate</div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="about-ceo__info-ceo-text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Volutpat nisl sit risus
+                        pharetra nisl metus aliquet. Nibh eu posuere sodales sem tellus. Vulputate est nisl convallis
+                        sed. Fames in dignissim erat fermentum sed sed. In massa, adipiscing aliquet mi semper facilisis
+                        ornare nisi. Non elit amet enim at cursus mauris senectus dolor ac. Egestas lectus in praesent
+                        mi arcu. Vitae nisl viverra enim nulla at. Fusce porta elementum quis.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-gallery">
+    <div class="gallery__photos">
+        <div class="gallery__photo-wrap">
+            <picture class="gallery__photo">
+                <source media="(max-width:576px)" srcset="./images/gallery/mobile/1.jpg">
+                <source media="(max-width:992px)" srcset="./images/gallery/tablet2/1.jpg">
+                <source media="(max-width:1200px)" srcset="./images/gallery/tablet/1.jpg">
+                <img src="./images/gallery/1.jpg" alt="design" style="width:auto;">
+            </picture>
+        </div>
+        <div class="gallery__photo-wrap">
+             <picture class="gallery__photo">
+                 <source media="(max-width:576px)" srcset="./images/gallery/mobile/2.jpg">
+                 <source media="(max-width:992px)" srcset="./images/gallery/tablet2/2.jpg">
+                 <source media="(max-width:1200px)" srcset="./images/gallery/tablet/2.jpg">
+                 <img src="./images/gallery/2.jpg" alt="design" style="width:auto;">
+            </picture>
+        </div>
+        <div class="gallery__photo-wrap">
+             <picture class="gallery__photo">
+                 <source media="(max-width:576px)" srcset="./images/gallery/mobile/3.jpg">
+                 <source media="(max-width:992px)" srcset="./images/gallery/tablet2/3.jpg">
+                 <source media="(max-width:1200px)" srcset="./images/gallery/tablet/3.jpg">
+                 <img src="./images/gallery/3.jpg" alt="design" style="width:auto;">
+            </picture>
+        </div>
+        <div class="gallery__photo-wrap">
+             <picture class="gallery__photo">
+                 <source media="(max-width:576px)" srcset="./images/gallery/mobile/4.jpg">
+                 <source media="(max-width:992px)" srcset="./images/gallery/tablet2/4.jpg">
+                 <source media="(max-width:1200px)" srcset="./images/gallery/tablet/4.jpg">
+                 <img src="./images/gallery/4.jpg" alt="design" style="width:auto;">
+            </picture>
+        </div>
+        <div class="gallery__photo-wrap">
+             <picture class="gallery__photo">
+                 <source media="(max-width:576px)" srcset="./images/gallery/mobile/5.jpg">
+                 <source media="(max-width:992px)" srcset="./images/gallery/tablet2/5.jpg">
+                 <source media="(max-width:1200px)" srcset="./images/gallery/tablet/5.jpg">
+                 <img src="./images/gallery/5.jpg" alt="design" style="width:auto;">
+            </picture>
+        </div>
+        <div class="gallery__photo-wrap">
+             <picture class="gallery__photo">
+                 <source media="(max-width:576px)" srcset="./images/gallery/mobile/6.jpg">
+                 <source media="(max-width:992px)" srcset="./images/gallery/tablet2/6.jpg">
+                 <source media="(max-width:1200px)" srcset="./images/gallery/tablet/6.jpg">
+                 <img src="./images/gallery/6.jpg" alt="design" style="width:auto;">
+            </picture>
+        </div>
+        <div class="gallery__photo-wrap">
+             <picture class="gallery__photo">
+                 <source media="(max-width:576px)" srcset="./images/gallery/mobile/7.jpg">
+                 <source media="(max-width:992px)" srcset="./images/gallery/tablet2/7.jpg">
+                 <source media="(max-width:1200px)" srcset="./images/gallery/tablet/7.jpg">
+                 <img src="./images/gallery/7.jpg" alt="design" style="width:auto;">
+            </picture>
+        </div>
+        <div class="gallery__photo-wrap">
+             <picture class="gallery__photo">
+                <img src="./images/gallery/8.jpg" alt="design" style="width:auto;">
+            </picture>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="gallery__content">
+            <div class="gallery__text-wrap">
+                <div class="gallery__title">@lorem.ipsum</div>
+
+                <div class="gallery__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                    ullamcorper
+                    eu mauris vitae posuere.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section contact-us">
+    <div class="container">
+        <div class="text-container">
+            <div class="contact-us__content">
+                <h2 class="contact-us__title title">Do you want to work in our team?</h2>
+
+                <div class="contact-us__block-wrap">
+                    <div class="contact-us__block">
+                        <div class="contact-us__form">
+                            <div class="input__wrap input__wrap_dark">
+                                <input type="text" class="input" placeholder="Email">
+
+                                <button class="input__btn-send">
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <use xlink:href="./images/icons/sprite.svg#arrow-right-light"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-us__block">
+                        <div class="contact-us__text text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae
+                            posuere. Ut at luctus ligula. Nunc ante felis, aliquam.
+                        </div>
+
+                        <div class="contact-us__info contact-us__text">
+                            <a href="mailto: info@hi-light.pl" class="contact-us__info-email contact-us__info-text">info@hi-light.pl</a>
+
+                            <ul class="contact-us__info-socials">
+                                <li class="contact-us__info-socials-item contact-us__info-text">
+                                    <a href="#">Fb</a>
+                                </li>
+                                <li class="contact-us__info-socials-item contact-us__info-text">
+                                    <a href="#">In</a>
+                                </li>
+                                <li class="contact-us__info-socials-item contact-us__info-text">
+                                    <a href="#">Be</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__content">
+            <div class="footer__content-block">
+                <div class="footer__text">© Copyright 2018. All rights reserved</div>
+            </div>
+
+            <div class="footer__content-block">
+                <div class="footer__text">Made with love in</div>
+
+                <div class="footer__partner-logo">
+                    <a href="#" class="footer__partner-link">
+                      <span class="footer__partner-text">The First</span>
+                      <span class="footer__partner-text">The Last.</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="modal">
+    <div class="modal__wrap">
+        <div class="modal__content-wrap">
+            <button class="modal__btn-close" id="close-modal">
+                <svg viewBox="0 0 9 9" width="9" height="9" class="input-file__btn-icon">
+                    <use xlink:href="./images/icons/sprite.svg#cross"></use>
+                </svg>
+            </button>
+
+            <div class="container">
+                <div class="modal__content">
+                    <div class="modal__block">
+                        <h3 class="modal__title">Calculate the cost of work</h3>
+
+                        <form action="#" class="modal__form">
+                            <div class="modal__input">
+                                <div class="input__wrap input__wrap_modal">
+                                    <input type="text" class="input" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="modal__input">
+                                <div class="input__wrap input__wrap_modal">
+                                    <input type="text" class="input" placeholder="Last name">
+                                </div>
+                            </div>
+                            <div class="modal__input">
+                                <div class="input__wrap input__wrap_modal">
+                                    <input type="text" class="input" placeholder="Phone">
+                                </div>
+                            </div>
+                            <div class="modal__input">
+                                <div class="input__wrap input__wrap_modal">
+                                    <input type="text" class="input" placeholder="Your city">
+                                </div>
+                            </div>
+                            <div class="modal__input">
+                                <div class="input__wrap input__wrap_modal">
+                                    <input type="text" class="input" placeholder="Email">
+                                </div>
+                            </div>
+
+                            <div class="modal__input">
+                                <select name="Property type" id="Property-type" class="select_modal">
+                                    <option value="Design" selected class="select-modal__option">Design</option>
+                                    <option value="Design2" class="select-modal__option">Design2</option>
+                                    <option value="Design3" class="select-modal__option">Design3</option>
+                                </select>
+                            </div>
+
+                            <div class="modal__input">
+                                <div class="input__wrap input__wrap_modal">
+                                    <input type="text" class="input" placeholder="Your comment">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modal__block">
+                        <div class="modal__subtitle modal__subtitle-select">Area (m2)</div>
+
+                        <div class="modal__select">
+                            <div class="select-type-line">
+                                <ul class="select-type-line__list">
+                                    <li class="select-type-line__option">
+                                        <button class="select-type-line__option-btn" data-value="to 50">
+                                            <span class="select-type-line__option-text">to 50</span>
+                                            <span class="select-type-line__option-point"></span>
+                                        </button>
+                                    </li>
+                                    <li class="select-type-line__option">
+                                        <button class="select-type-line__option-btn" data-value="50-150">
+                                            <span class="select-type-line__option-text">50-150</span>
+                                            <span class="select-type-line__option-point"></span>
+                                        </button>
+                                    </li>
+                                    <li class="select-type-line__option">
+                                        <button class="select-type-line__option-btn" data-value="150-250">
+                                            <span class="select-type-line__option-text">150-250</span>
+                                            <span class="select-type-line__option-point"></span>
+                                        </button>
+                                    </li>
+                                    <li class="select-type-line__option">
+                                        <button class="select-type-line__option-btn" data-value="250-400">
+                                            <span class="select-type-line__option-text">250-400</span>
+                                            <span class="select-type-line__option-point"></span>
+                                        </button>
+                                    </li>
+                                    <li class="select-type-line__option">
+                                        <button class="select-type-line__option-btn" data-value="400-600">
+                                            <span class="select-type-line__option-text">400-600</span>
+                                            <span class="select-type-line__option-point"></span>
+                                        </button>
+                                    </li>
+                                    <li class="select-type-line__option">
+                                        <button class="select-type-line__option-btn" data-value="600-800">
+                                            <span class="select-type-line__option-text">600-800</span>
+                                            <span class="select-type-line__option-point"></span>
+                                        </button>
+                                    </li>
+                                    <li class="select-type-line__option">
+                                        <button class="select-type-line__option-btn" data-value="800-1000">
+                                            <span class="select-type-line__option-text">800-1000</span>
+                                            <span class="select-type-line__option-point"></span>
+                                        </button>
+                                    </li>
+                                    <li class="select-type-line__option">
+                                        <button class="select-type-line__option-btn" data-value="1000+">
+                                            <span class="select-type-line__option-text">1000+</span>
+                                            <span class="select-type-line__option-point"></span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="modal__send-wrap">
+                            <div class="modal__file">
+                                <div class="input-file">
+                                    <label class="input-file__label" for="design-file">
+                                    <span class="input-file__btn">
+                                         <span class="input-file__btn-icon-wrap">
+                                             <svg viewBox="0 0 9 9" width="9" height="9" class="input-file__btn-icon">
+                                                <use xlink:href="./images/icons/sprite.svg#plus"></use>
+                                            </svg>
+                                        </span>
+                                    </span>
+
+                                        <span class="input-file__btn-text modal__text" id="design-file-text">
+                                        <span class="modal__subtitle input-file__btn-text-title">Attach your file</span>
+
+                                        <span class="modal__text">File size not more than 10 MB</span>
+                                    </span>
+                                    </label>
+
+                                    <input type="file" class="input-file__item" id="design-file">
+
+                                </div>
+                            </div>
+
+                            <button class="btn btn_full btn_modal">Send Request</button>
+                        </div>
+
+                        <div class="modal__footer">
+                            <div class="modal__footer-text">
+                                It is a long established fact that a reader will be distracted by the readable content
+                                of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                                more-or-less normal distribution of letters, as opposed to using 'Content here, content
+                                here', making it look like readable English.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="main.min.js"></script>
+</body>
+</html>
