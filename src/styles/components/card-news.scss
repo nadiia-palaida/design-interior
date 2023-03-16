@@ -33,6 +33,7 @@
 
 .card-news_full {
   width: 100%;
+  margin: 4px 4px;
 
   .card-news__img-wrap {
     position: relative;
@@ -55,8 +56,11 @@
 }
 
 .card-news_small {
-  width: 50%;
+  margin: 4px;
+  width: calc(50% - 8px);
   background: none;
+  display: flex;
+  flex-shrink: 1;
 
   .card-news__content-block {
     width: 100%;

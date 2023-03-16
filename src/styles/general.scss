@@ -43,7 +43,7 @@ body {
 
 @media (min-width: 321px) {
   .container {
-    max-width: 327px;
+    max-width: 320px;
   }
 }
 
@@ -468,5 +468,15 @@ input::placeholder {
 @media screen and (max-width: 992px) {
   .section {
     padding: 104px 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .title {
+    font-size: 26px;
+  }
+
+  .section {
+    padding: 64px 0;
   }
 }

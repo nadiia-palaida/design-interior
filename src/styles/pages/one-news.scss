@@ -77,6 +77,15 @@
 
 .one-news__img-wrap_some {
   display: flex;
+
+  .one-news__img {
+    display: flex;
+    flex-shrink: 1;
+
+    &:first-child {
+      margin-right: 8px;
+    }
+  }
 }
 
 .one-news__img_small {
@@ -183,4 +192,19 @@
   .container {
     margin-right: 0;
   }
+}
+
+.imgs__wrap-some {
+  .one-news__img {
+    display: flex;
+    flex-shrink: 1;
+
+    &:first-child {
+      margin-right: 8px;
+    }
+  }
+}
+
+.one-news__top {
+  margin-bottom: 32px;
 }

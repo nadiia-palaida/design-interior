@@ -90,15 +90,29 @@
     z-index: 100;
   }
 
-  .header__logo-wrap {
-    margin-right: 92px;
-  }
-
   .main-info__social-list {
     margin-right: 72px;
   }
 
   .main-info__city {
     margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .menu__block-wrap {
+    justify-content: flex-end;
+  }
+
+  .menu {
+    order: 2
+  }
+
+  .language-wrap {
+    order: 1
+  }
+
+  .language {
+    margin-right: 54px;
   }
 }

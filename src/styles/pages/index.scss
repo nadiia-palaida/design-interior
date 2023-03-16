@@ -633,8 +633,104 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .main-info__contacts {
+    flex-direction: column;
+  }
+
+  .main-info__contacts-item {
+    margin-bottom: 8px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
 @media screen and (max-width: 576px) {
-  .header__btn {
+  .section-main {
+    min-height: 400px;
+  }
+
+  .main-info__social-list {
     display: none;
+  }
+
+
+  .section-main-about {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .main-about__info-subtitle {
+    display: none;
+  }
+
+  .main-about__info-block {
+    padding-right: 0;
+    margin-bottom: 198px;
+  }
+
+  .main-about__images-wrap {
+    padding-left: 0;
+    margin-bottom: 80px;
+  }
+
+  .main-about__img:first-child {
+    top: 40px;
+    left: 20%;
+  }
+
+  .main-about__info-block:nth-child(2) {
+    .main-about__info {
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+
+  .main-about__info-blockquote-quotes {
+    margin-right: 5px;
+  }
+
+  .our-projects__label {
+    display: none;
+  }
+
+  .our-projects__description {
+    text-align: left;
+    padding-bottom: 80px;
+  }
+
+  .our-projects__description-text {
+    width: 100%;
+  }
+
+  .our-projects__more {
+    height: 327px;
+  }
+
+  .our-projects__info {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .our-projects__info-block {
+    width: 100%;
+    text-align: left;
+    align-items: flex-start;
+
+    &:last-child {
+      width: 100%;
+    }
+  }
+
+  .section-gallery {
+    padding: 290px 0;
+  }
+
+  .section-contacts {
+    padding-top: 56px;
+    padding-bottom: 20px;
   }
 }

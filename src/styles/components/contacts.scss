@@ -158,3 +158,46 @@
     justify-content: flex-end;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .contacts__label {
+    display: none;
+  }
+
+  .contacts__content {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .contacts__title-wrap {
+    margin-bottom: 48px;
+  }
+
+  .contacts__info-wrap {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+
+  .contacts__info-item {
+    margin-bottom: 40px;
+  }
+
+  .contacts__info-request-wrap {
+    flex-wrap: wrap;
+  }
+
+  .contacts__info__btn {
+    display: flex;
+    order: 2;
+  }
+
+  .contacts__info-wrap_request {
+    display: flex;
+    order: 1;
+    margin-bottom: 48px;
+  }
+
+  .contacts__content-communication-block {
+    justify-content: flex-start;
+  }
+}
