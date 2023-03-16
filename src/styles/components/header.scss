@@ -229,3 +229,17 @@
     margin-right: 40px;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .header__btn {
+    display: none;
+  }
+
+  .menu__mobile-title {
+    display: none;
+  }
+
+  .header__logo-wrap {
+    margin-right: 0;
+  }
+}

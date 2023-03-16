@@ -76,7 +76,7 @@
   font-size: 11px;
   color: $text-light;
   letter-spacing: 0.06em;
-  appearance:none;
+  appearance: none;
   cursor: pointer;
 }
 
@@ -89,7 +89,7 @@
 }
 
 .main-info__contacts-item {
-  margin-right: 31px;
+  margin-right: 32px;
   font-family: "Montserrat SemiBold", sans-serif;
   font-size: 11px;
 
@@ -104,7 +104,7 @@
 
 .section-main-about {
   padding-top: 220px;
-  background: url("./images/company-philosophy/about-bg.jpg") no-repeat top 140px right ;
+  background: url("./images/company-philosophy/about-bg.jpg") no-repeat top 140px right;
 }
 
 .main-about__info {
@@ -173,41 +173,14 @@
 .main-about__info-text-wrap {
   margin-bottom: 24px;
   opacity: 0.7;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
 }
 
-.main-about__info-label {
-  display: inline-block;
-  position: relative;
-  padding-left: 16px;
-  font-family: "Montserrat Bold", sans-serif;
-  font-size: 10px;
-  letter-spacing: 0.12em;
-  color: $text-dark;
-  text-transform: uppercase;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    display: block;
-    height: 1px;
-    width: 8px;
-    background: rgba(49, 49, 49, 0.2);
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: calc(100% + 8px);
-    transform: translateY(-50%);
-    display: block;
-    height: 1px;
-    width: 56px;
-    background: rgba(49, 49, 49, 0.2);
-  }
+.main-about__info-texts-wrap {
+  margin-bottom: 64px;
 }
 
 .main-about__images-wrap {
@@ -226,6 +199,10 @@
 
   &:nth-child(2) {
     width: 62%;
+
+    img {
+      width: 62%;
+    }
   }
 }
 
@@ -349,6 +326,10 @@
 
 .our-projects__more-img-wrap {
   transition: all 0.2s;
+
+  img {
+    width: 100%;
+  }
 }
 
 .our-projects__more-title {
@@ -373,7 +354,7 @@
 
 .our-projects__info-block {
   width: 50%;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 
   &:last-child {
     margin-bottom: 0;
@@ -410,7 +391,7 @@
   padding-top: 119px;
   padding-bottom: 0px;
   position: relative;
-  background: url('./images/contacts/contacts-bg.png')  no-repeat;
+  background: url('./images/contacts/contacts-bg.png') no-repeat;
   background-size: cover;
 
   &::after {
@@ -452,5 +433,208 @@
 
   .main-about__info {
     width: 60%;
+  }
+
+  .main-about__info-title {
+    margin-bottom: 24px;
+  }
+
+  .main-about__info-texts-wrap {
+    margin-bottom: 40px;
+  }
+
+  .main-about__info-block {
+    margin-bottom: 190px;
+  }
+
+  .main-about__images-wrap {
+    padding-left: 103px;
+  }
+
+  .main-about__img {
+    &:first-child {
+      width: 50%;
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .main-about__info-blockquote {
+    font-size: 16px;
+    margin-right: 85px;
+  }
+
+  .main-about__info-blockquote-quotes {
+    font-size: 25px;
+    margin-right: 22px;
+  }
+
+  .main-about__info-block:nth-child(2) .main-about__info {
+    padding-left: 22px;
+
+    .main-about__info-subtitle {
+      display: none;
+    }
+  }
+
+  .our-projects__description {
+    padding-bottom: 124px;
+  }
+
+  .our-projects__description-text {
+    width: 60%;
+  }
+
+  .our-projects__decor {
+    display: none;
+  }
+
+  .our-projects__more-title {
+    font-size: 20px;
+  }
+
+  .our-projects__more-img-wrap {
+    max-width: 40%;
+  }
+
+  .our-projects__info {
+    padding-top: 142px;
+  }
+
+  .our-projects__info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .our-projects__info-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 42%;
+    text-align: center;
+
+    &:last-child {
+      width: 60%;
+      margin-left: unset;
+      padding: unset;
+    }
+  }
+
+  .our-projects__info-text_big {
+    padding-left: 0;
+  }
+
+  .our-projects__info-text_small {
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main-info__social-list {
+    margin-right: 64px;
+  }
+
+  .main-info__city {
+    margin-right: 32px;
+  }
+
+  .section-main-about {
+    background: none;
+    padding-top: 104px;
+  }
+
+  .main-about__info {
+    width: 100%;
+  }
+
+  .main-about__info-subtitle {
+    margin-right: 65px;
+  }
+
+  .main-about__info-block {
+    padding-right: 65px;
+    margin-bottom: 230px;
+
+    &:last-child {
+      flex-direction: column;
+    }
+  }
+
+  .main-about__images-wrap {
+    width: 100%;
+    padding-left: 76px;
+    margin-bottom: 22px;
+  }
+
+  .main-about__img {
+    &:first-child {
+      left: 30%;
+      top: 120px;
+      width: auto;
+
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    &:nth-child(2) {
+      img {
+        width: auto;
+      }
+    }
+  }
+
+  .main-about__info-blockquote {
+    margin-right: 0;
+  }
+
+  .main-about__info-block:nth-child(2) .main-about__info {
+    margin-left: auto;
+    width: 55%;
+  }
+
+  .our-projects__title {
+    margin-bottom: 24px;
+  }
+
+  .our-projects__description {
+    padding-bottom: 104px;
+  }
+
+  .our-projects__more {
+    width: 100%;
+    height: 672px;
+  }
+
+  .our-projects__info {
+    padding-top: 64px;
+    padding-bottom: 124px;
+  }
+
+  .our-projects__info-block {
+    width: 55%;
+  }
+
+  .our-projects__info-text_small {
+    margin-bottom: 48px;
+  }
+
+  .section-contacts {
+    padding-top: 88px;
+  }
+
+  .contacts__title-wrap {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header__btn {
+    display: none;
   }
 }
