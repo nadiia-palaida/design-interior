@@ -87,6 +87,7 @@
   .project-card__description-name {
     display: block;
     margin-bottom: 24px;
+    font-size: 20px;
   }
 
   .project-card__description-mode {
@@ -106,4 +107,11 @@
     height: 327px;
   }
 
+  .project-card__description {
+    padding: 24px;
+  }
+
+  .project-card__description-name {
+    margin-bottom: 16px;
+  }
 }

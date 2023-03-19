@@ -10,24 +10,27 @@
 <section class="section-news news">
     <div class="container">
         <div class="news__content">
-            <div class="news__top">
-                <h1 class="news__title title">Our latest news</h1>
+            <div class="text-container">
+                <div class="news__top">
+                    <h1 class="news__title title">Our latest news</h1>
 
-                <div class="tabs ">
-                    <ul class="tabs__list">
-                        <li class="tabs__item news__tab" data-index="0">
-                            <button class="tabs__item-btn">All</button>
-                        </li>
-                        <li class="tabs__item news__tab" data-index="1">
-                            <button class="tabs__item-btn">Blog</button>
-                        </li>
-                        <li class="tabs__item news__tab" data-index="2">
-                            <button class="tabs__item-btn">News</button>
-                        </li>
-                        <li class="tabs__item news__tab" data-index="3">
-                            <button class="tabs__item-btn">Advice from the designer</button>
-                        </li>
-                    </ul>
+                    <div class="tabs">
+                        <div class="tabs__active" id="active-tab"></div>
+                        <ul class="tabs__list" id="tabs-list">
+                            <li class="tabs__item news__tab" data-index="0" data-label="All">
+                                <button class="tabs__item-btn">All</button>
+                            </li>
+                            <li class="tabs__item news__tab" data-index="1" data-label="Blog">
+                                <button class="tabs__item-btn">Blog</button>
+                            </li>
+                            <li class="tabs__item news__tab" data-index="2" data-label="News">
+                                <button class="tabs__item-btn">News</button>
+                            </li>
+                            <li class="tabs__item news__tab" data-index="3" data-label="Advice from the designer">
+                                <button class="tabs__item-btn">Advice from the designer</button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -252,29 +255,29 @@
 
 <section class="section section-news-info">
     <div class="container">
-        <div class="our-projects__info-content news-info__content">
-            <div class="our-projects__label">Make request</div>
-
-            <div class="our-projects__info-block news-info__block">
-                <div class="our-projects__info-text_big news__text-info title">Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit.
-                </div>
-            </div>
-
-            <div class="our-projects__info-block news-info__block">
-                <div class="our-projects__info-text_small news__text-info">Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante
-                    felis, aliquam eu enim sed, ornare pretium velit.
+        <div class="text-container">
+            <div class="news__info-content news-info__content">
+                <div class="news__info-block news-info__block">
+                    <div class="news__info-text_big news__text-info title">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.
+                    </div>
                 </div>
 
-                <div class="input__wrap">
-                    <input type="text" class="input" placeholder="Email">
+                <div class="news__info-block news-info__block">
+                    <div class="news__info-text_small news__text-info">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante
+                        felis, aliquam eu enim sed, ornare pretium velit.
+                    </div>
 
-                    <button class="input__btn-send">
-                        <svg viewBox="0 0 24 24" width="24" height="24">
-                            <use xlink:href="./images/icons/sprite.svg#arrow-right-light"></use>
-                        </svg>
-                    </button>
+                    <div class="input__wrap">
+                        <input type="text" class="input" placeholder="Email">
+
+                        <button class="input__btn-send">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <use xlink:href="./images/icons/sprite.svg#arrow-right-light"></use>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

@@ -215,6 +215,10 @@
   opacity: 0.5;
 }
 
+.news-swiper {
+  width: 150%;
+}
+
 @media screen and (max-width: 1200px) {
   .main-swiper__item-title {
     font-size: 48px;
@@ -295,5 +299,9 @@
     .main-swiper__item-content {
       opacity: 0;
     }
+  }
+
+  .news-swiper {
+    //width: 100%;
   }
 }

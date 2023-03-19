@@ -5,3 +5,41 @@
 .section-projects {
   padding-top: calc(112px + 96px);
 }
+
+@media screen and (max-width: 1200px) {
+  .section-projects {
+    padding-top: 162px;
+  }
+
+  .one-news__title {
+    margin-bottom: 24px;
+  }
+
+  .our-projects__info {
+    padding-top: 124px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .section-projects {
+    padding-top: 138px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .section-projects {
+    padding-top: 116px;
+  }
+
+  .projects__text {
+    margin-bottom: 24px;
+  }
+
+  .our-projects__info {
+    padding-top: 96px;
+  }
+
+  .our-projects__info-block {
+    margin-bottom: 16px;
+  }
+}

@@ -46,6 +46,7 @@
 
 .menu__list {
   display: flex;
+  padding-left: 135px;
 }
 
 .menu__item {
@@ -204,6 +205,14 @@
 
   .gallery__text {
     opacity: 0.6;
+  }
+
+  .menu__mobile-icon__line {
+    background: $text-dark;
+  }
+
+  .menu__mobile-title {
+    color: $text-dark;
   }
 }
 

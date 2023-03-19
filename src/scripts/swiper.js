@@ -46,13 +46,35 @@ if (btnNext.length) {
 }
 
 const newsSwiper = new Swiper('.news-swiper', {
-    slidesPerView: 4,
+    slidesPerView: "auto",
     spaceBetween: 48,
     loop: true,
     autoplay: true,
-    centeredSlides: true,
+    // centeredSlides: true,
     loopedSlides: 3,
-    modules: [Autoplay]
+    modules: [Autoplay],
+    breakpoints: {
+        320: {
+            slidesPerView: 1.5,
+            spaceBetween: 40
+        },
+        576: {
+            slidesPerView: 1.5,
+            spaceBetween: 40
+        },
+        768: {
+            slidesPerView: 2.5,
+            spaceBetween: 40
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 40
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 40
+        }
+    }
 });
 
 const aboutSwiper = new Swiper('.about-philosophy__description-swiper', {
