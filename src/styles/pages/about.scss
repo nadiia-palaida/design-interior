@@ -27,6 +27,21 @@
   color: $text-light;
 }
 
+.about-philosophy {
+  padding-left: 18%;
+}
+
+.text-container.text-container_about-philosophy {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.container_about-philosophy {
+  margin-left: auto;
+  margin-right: unset;
+  //max-width: 1450px;
+}
+
 .about-philosophy__description {
   display: flex;
 }
@@ -98,6 +113,14 @@
   width: 65%;
 }
 
+.about-experience__img-wrap {
+  width: 50%;
+}
+
+.about-experience__img {
+  max-width: 100%;
+}
+
 .about-experience__info-number {
   margin-bottom: 44px;
 }
@@ -113,7 +136,10 @@
 .about-ceo__img-wrap {
   width: 50%;
   padding-right: 84px;
+}
 
+.about-ceo__img {
+  max-width: 100%;
 }
 
 .about-ceo__text-wrap {
@@ -221,5 +247,196 @@
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about-experience {
+    background: none;
+  }
+
+  .about-experience__info {
+    padding-left: 40px;
+  }
+
+  .about-ceo__img-wrap {
+    padding-right: 0;
+  }
+
+  .about-experience__info-list-item {
+    margin-right: 24px;
+  }
+
+  .info-item-number__title {
+    font-size: 40px;
+  }
+
+  .contact-us__block-wrap {
+    //flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about-main__text-wrap {
+    width: 50%;
+  }
+
+  .about-philosophy__description-wrap {
+    width: 90%;
+    margin-bottom: 40px;
+  }
+
+  .about-philosophy__description-text-wrap {
+    width: 90%;
+  }
+
+  .info-item-number__title {
+    font-size: 30px;
+  }
+
+  .about-experience__info-list-item {
+    margin-right: 0;
+  }
+
+  .about-ceo__subtitle {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .about-ceo__text {
+    width: 100%;
+  }
+
+  .about-ceo__text-block {
+    margin-bottom: 56px;
+  }
+
+  .about-ceo__img-ceo-wrap {
+    margin-bottom: 64px;
+  }
+
+  .about-ceo__info-list {
+    margin-bottom: 24px;
+  }
+
+  .contact-us__title {
+    width: 75%;
+    margin-bottom: 80px;
+  }
+
+  .contact-us__block-wrap {
+    flex-direction: column;
+  }
+
+  .contact-us__block {
+    width: 100%;
+
+    &:first-child {
+      margin-bottom: 24px;
+    }
+  }
+
+  .contact-us__form {
+    width: 100%;
+  }
+
+  .contact-us__text {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about-main__text-wrap {
+    width: 100%;
+  }
+
+  .about-philosophy__description-wrap {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .about-philosophy__description-text-wrap {
+    width: 90%;
+  }
+
+  .about-experience__content {
+    padding-left: 0;
+    flex-direction: column;
+  }
+
+  .about-experience__img-wrap {
+    width: 100%;
+    order: 2;
+  }
+
+  .about-experience__info {
+    padding-left: 0;
+    width: 100%;
+    order: 1;
+    margin-bottom: 40px;
+  }
+
+  .about-experience__info-list {
+    flex-wrap: inherit;
+    justify-content: space-around;
+  }
+
+  .about-experience__info-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-item-number__title {
+    text-align: center;
+  }
+
+  .info-item-number__text {
+    width: 100%;
+  }
+
+  .about-ceo__text-wrap {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .about-ceo__content {
+    flex-direction: column;
+  }
+
+  .about-ceo__text-quotes {
+    left: -12px;
+    font-size: 20px;
+    top: 0px;
+  }
+
+  .about-ceo__img-description {
+    display: none;
+  }
+
+  .about-ceo__img-wrap {
+    width: 100%;
+  }
+
+  .about-ceo__text-block {
+    margin-bottom: 24px;
+  }
+
+  .about-ceo__img-ceo-wrap {
+    margin-bottom: 24px;
+  }
+
+  .about-experience__info-number {
+    margin-bottom: 0;
+  }
+
+  .contact-us__title {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .about-philosophy {
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }

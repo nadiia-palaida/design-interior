@@ -73,6 +73,69 @@
     </div>
 </header>
 
+<div class="menu menu-mobile" id="menu">
+    <div class="menu__list-wrap">
+        <ul class="menu__list">
+            <li class="menu__item menu__item_mobile active">
+                <a href="index.html" class="menu__link">Home</a>
+            </li>
+            <li class="menu__item menu__item_mobile">
+                <a href="projects.html" class="menu__link">Projects</a>
+            </li>
+            <li class="menu__item menu__item_mobile">
+                <a href="about.html" class="menu__link">About us</a>
+            </li>
+            <li class="menu__item menu__item_mobile">
+                <a href="news.html" class="menu__link">Blog</a>
+            </li>
+            <li class="menu__item menu__item_mobile">
+                <a href="contact.html" class="menu__link">Contacts</a>
+            </li>
+            <li class="menu__item menu__item_mobile">
+                <button class="mobile-menu__btn-request btn btn_empty make-request-btn">Send Request</button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="menu__main-info-wrap">
+        <div class="main-info menu__main-info">
+            <div class="container">
+                <div class="main-info__content">
+                    <ul class="main-info__social-list">
+                        <li class="main-info__social-item">
+                            <a href="#" class="main-info__social-link">Fb</a>
+                        </li>
+                        <li class="main-info__social-item">
+                            <a href="#" class="main-info__social-link">In</a>
+                        </li>
+                        <li class="main-info__social-item">
+                            <a href="#" class="main-info__social-link">Be</a>
+                        </li>
+                    </ul>
+
+                    <div class="main-info__city">
+                        <select name="City" id="City" class="select-city">
+                            <option value="Berlin" selected class="select-city__option">Berlin</option>
+                            <option value="Lublin" class="select-city__option">Lublin</option>
+                            <option value="Warszawa" class="select-city__option">Warszawa</option>
+                            <option value="Lviv" class="select-city__option">Lviv</option>
+                        </select>
+                    </div>
+
+                    <ul class="main-info__contacts">
+                        <li class="main-info__contacts-item">
+                            <a href="tel:+380983527547" class="main-info__contacts-link">+380983527547</a>
+                        </li>
+                        <li class="main-info__contacts-item">
+                            <a href="mailto: info@gmail.com" class="main-info__contacts-link">E: info@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <section class="section-news news">
     <div class="container">
         <div class="news__content">
@@ -371,7 +434,7 @@
 </footer>
 </section>
 
-<div class="modal">
+<div class="modal modal-request">
     <div class="modal__wrap">
         <div class="modal__content-wrap">
             <button class="modal__btn-close" id="close-modal">
@@ -489,6 +552,7 @@
                                             <span class="select-type-line__option-text">1000+</span>
                                             <span class="select-type-line__option-point"></span>
                                         </button>
+                                        <div class="select-type-line__item"></div>
                                     </li>
                                 </ul>
                             </div>
@@ -514,11 +578,10 @@
                                     </label>
 
                                     <input type="file" class="input-file__item" id="design-file">
-
                                 </div>
                             </div>
 
-                            <button class="btn btn_full btn_modal">Send Request</button>
+                            <button class="btn btn_full btn_modal open-thanks-modal-btn">Send Request</button>
                         </div>
 
                         <div class="modal__footer">

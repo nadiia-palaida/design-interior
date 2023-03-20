@@ -114,6 +114,7 @@
 .one-project-next__label {
   font-family: "Montserrat Bold", sans-serif;
   font-size: 8px;
+  margin-bottom: 10px;
   color: $text-gray;
   text-transform: uppercase;
   line-height: 14px;
@@ -127,7 +128,7 @@
 }
 
 .one-project-next__photo {
-  transform: translateY(250px);
+  transform: translateY(92px);
   max-width: 100%;
 }
 
@@ -163,6 +164,10 @@
   .one-project-next__link {
     margin-bottom: 96px;
   }
+
+  .one-project-main__footer {
+    transform: unset;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -171,15 +176,11 @@
   }
 
   .one-project-main__title {
-    max-width: 55%;
+    max-width: 60%;
   }
 
   .one-project-main__text {
     margin-bottom: 32px;
-  }
-
-  .one-project-main__footer {
-    transform: unset;
   }
 
   .one-news__text-wrap:last-child.one-project__text-wrap {

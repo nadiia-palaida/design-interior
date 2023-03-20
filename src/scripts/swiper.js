@@ -91,7 +91,17 @@ const aboutSwiper = new Swiper('.about-philosophy__description-swiper', {
         nextEl: ".about-philosophy__description-swiper-button-next",
         prevEl: ".about-philosophy__description-swiper-button-prev",
     },
-    modules: [Pagination, Navigation, Controller]
+    modules: [Pagination, Navigation, Controller],
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 12
+        },
+        768: {
+            slidesPerView: "auto",
+            spaceBetween: 12
+        }
+    }
 });
 
 const aboutSwiper2 = new Swiper(".about-philosophy__description-swiper", {
@@ -112,7 +122,17 @@ const aboutSwiper2 = new Swiper(".about-philosophy__description-swiper", {
             swiper.pagination.update()
         },
     },
-    modules: [Pagination]
+    modules: [Pagination],
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 12
+        },
+        768: {
+            slidesPerView: "auto",
+            spaceBetween: 12
+        }
+    }
 });
 
 aboutSwiper.controller.control = aboutSwiper2;

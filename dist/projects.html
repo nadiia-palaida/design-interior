@@ -73,181 +73,112 @@
     </div>
 </header>
 
+<div class="menu menu-mobile" id="menu">
+    <div class="menu__list-wrap">
+        <ul class="menu__list">
+            <li class="menu__item menu__item_mobile active">
+                <a href="index.html" class="menu__link">Home</a>
+            </li>
+            <li class="menu__item menu__item_mobile">
+                <a href="projects.html" class="menu__link">Projects</a>
+            </li>
+            <li class="menu__item menu__item_mobile">
+                <a href="about.html" class="menu__link">About us</a>
+            </li>
+            <li class="menu__item menu__item_mobile">
+                <a href="news.html" class="menu__link">Blog</a>
+            </li>
+            <li class="menu__item menu__item_mobile">
+                <a href="contact.html" class="menu__link">Contacts</a>
+            </li>
+            <li class="menu__item menu__item_mobile">
+                <button class="mobile-menu__btn-request btn btn_empty make-request-btn">Send Request</button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="menu__main-info-wrap">
+        <div class="main-info menu__main-info">
+            <div class="container">
+                <div class="main-info__content">
+                    <ul class="main-info__social-list">
+                        <li class="main-info__social-item">
+                            <a href="#" class="main-info__social-link">Fb</a>
+                        </li>
+                        <li class="main-info__social-item">
+                            <a href="#" class="main-info__social-link">In</a>
+                        </li>
+                        <li class="main-info__social-item">
+                            <a href="#" class="main-info__social-link">Be</a>
+                        </li>
+                    </ul>
+
+                    <div class="main-info__city">
+                        <select name="City" id="City" class="select-city">
+                            <option value="Berlin" selected class="select-city__option">Berlin</option>
+                            <option value="Lublin" class="select-city__option">Lublin</option>
+                            <option value="Warszawa" class="select-city__option">Warszawa</option>
+                            <option value="Lviv" class="select-city__option">Lviv</option>
+                        </select>
+                    </div>
+
+                    <ul class="main-info__contacts">
+                        <li class="main-info__contacts-item">
+                            <a href="tel:+380983527547" class="main-info__contacts-link">+380983527547</a>
+                        </li>
+                        <li class="main-info__contacts-item">
+                            <a href="mailto: info@gmail.com" class="main-info__contacts-link">E: info@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <section class="section-projects">
     <div class="container">
         <div class="news__content">
-            <div class="news__top">
-                <div class="one-news__top-block one-news__top-block_projects">
-                    <h1 class="one-news__title title">Our Projects</h1>
-                </div>
-
-                <div class="one-news__top-block one-news__top-block_projects">
-                    <div class="projects__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                        ullamcorper eu
-                        mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium
-                        velit.
+            <div class="text-container">
+                <div class="news__top">
+                    <div class="one-news__top-block one-news__top-block_projects">
+                        <h1 class="one-news__title title">Our Projects</h1>
                     </div>
 
-                    <div class="tabs">
-                        <div class="tabs__active" id="active-tab"></div>
+                    <div class="one-news__top-block one-news__top-block_projects">
+                        <div class="projects__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Aliquam
+                            ullamcorper eu
+                            mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare
+                            pretium
+                            velit.
+                        </div>
 
-                        <ul class="tabs__list" id="tabs-list">
-                            <li class="tabs__item news__tab" data-index="0" data-label="House">
-                                <button class="tabs__item-btn">House</button>
-                            </li>
-                            <li class="tabs__item news__tab" data-index="1" data-label="Apartments">
-                                <button class="tabs__item-btn">Apartments</button>
-                            </li>
-                            <li class="tabs__item news__tab" data-index="2" data-label="Commerce">
-                                <button class="tabs__item-btn">Commerce</button>
-                            </li>
-                            <li class="tabs__item news__tab" data-index="3" data-label="Architecture">
-                                <button class="tabs__item-btn">Architecture</button>
-                            </li>
-                        </ul>
+                        <div class="tabs">
+                            <div class="tabs__active" id="active-tab"></div>
+
+                            <ul class="tabs__list" id="tabs-list">
+                                <li class="tabs__item news__tab" data-index="0" data-label="House">
+                                    <button class="tabs__item-btn">House</button>
+                                </li>
+                                <li class="tabs__item news__tab" data-index="1" data-label="Apartments">
+                                    <button class="tabs__item-btn">Apartments</button>
+                                </li>
+                                <li class="tabs__item news__tab" data-index="2" data-label="Commerce">
+                                    <button class="tabs__item-btn">Commerce</button>
+                                </li>
+                                <li class="tabs__item news__tab" data-index="3" data-label="Architecture">
+                                    <button class="tabs__item-btn">Architecture</button>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="our-projects__catalog tabs-content">
                 <div class="project-card">
-                    <div class="project-card__description">
-                        <ul class="project-card__description-list">
-                            <li class="project-card__description-list-item">Lodz</li>
-                            <li class="project-card__description-list-item">16.10.2018</li>
-                            <li class="project-card__description-list-item">80 sq.m</li>
-                        </ul>
-
-                        <div>
-                            <a href="one-project.html" class="project-card__description-name">Eyewear store interior</a>
-                            <a href="one-project.html" class="project-card__description-mode link">Discover more</a>
-                        </div>
-                    </div>
-
-                    <div class="project-card__img-wrap">
-                        <img src="./images/our-projects/1.jpg" alt="design-project" class="project-card__img">
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-card__description">
-                        <ul class="project-card__description-list">
-                            <li class="project-card__description-list-item">Lodz</li>
-                            <li class="project-card__description-list-item">16.10.2018</li>
-                            <li class="project-card__description-list-item">80 sq.m</li>
-                        </ul>
-
-                        <div>
-                            <a href="one-project.html" class="project-card__description-name">Minimalist style home</a>
-                            <a href="one-project.html" class="project-card__description-mode link">Discover more</a>
-                        </div>
-                    </div>
-
-                    <div class="project-card__img-wrap">
-                        <img src="./images/our-projects/2.jpg" alt="design-project" class="project-card__img">
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-card__description">
-                        <ul class="project-card__description-list">
-                            <li class="project-card__description-list-item">Lodz</li>
-                            <li class="project-card__description-list-item">16.10.2018</li>
-                            <li class="project-card__description-list-item">80 sq.m</li>
-                        </ul>
-
-                        <div>
-                            <a href="one-project.html" class="project-card__description-name">Residence by the
-                                lighthouse</a>
-                            <a href="one-project.html" class="project-card__description-mode link">Discover more</a>
-                        </div>
-                    </div>
-
-                    <div class="project-card__img-wrap">
-                        <img src="./images/our-projects/3.jpg" alt="design-project" class="project-card__img">
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-card__description">
-                        <ul class="project-card__description-list">
-                            <li class="project-card__description-list-item">Lodz</li>
-                            <li class="project-card__description-list-item">16.10.2018</li>
-                            <li class="project-card__description-list-item">80 sq.m</li>
-                        </ul>
-
-                        <div>
-                            <a href="one-project.html" class="project-card__description-name">Eyewear store interior</a>
-                            <a href="one-project.html" class="project-card__description-mode link">Discover more</a>
-                        </div>
-                    </div>
-
-                    <div class="project-card__img-wrap">
-                        <img src="./images/our-projects/4.jpg" alt="design-project" class="project-card__img">
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-card__description">
-                        <ul class="project-card__description-list">
-                            <li class="project-card__description-list-item">Lodz</li>
-                            <li class="project-card__description-list-item">16.10.2018</li>
-                            <li class="project-card__description-list-item">80 sq.m</li>
-                        </ul>
-
-                        <div>
-                            <a href="one-project.html" class="project-card__description-name">Eyewear store interior</a>
-                            <a href="one-project.html" class="project-card__description-mode link">Discover more</a>
-                        </div>
-                    </div>
-
-                    <div class="project-card__img-wrap">
-                        <img src="./images/our-projects/6.jpg" alt="design-project" class="project-card__img">
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-card__description">
-                        <ul class="project-card__description-list">
-                            <li class="project-card__description-list-item">Lodz</li>
-                            <li class="project-card__description-list-item">16.10.2018</li>
-                            <li class="project-card__description-list-item">80 sq.m</li>
-                        </ul>
-
-                        <div>
-                            <a href="one-project.html" class="project-card__description-name">Eyewear store interior</a>
-                            <a href="one-project.html" class="project-card__description-mode link">Discover more</a>
-                        </div>
-                    </div>
-
-                    <div class="project-card__img-wrap">
-                        <img src="./images/our-projects/7.jpg" alt="design-project" class="project-card__img">
-                    </div>
-                </div>
-            </div>
-
-            <div class="our-projects__catalog tabs-content">
-                <div class="project-card">
-                    <div class="project-card__description">
-                        <ul class="project-card__description-list">
-                            <li class="project-card__description-list-item">Lodz</li>
-                            <li class="project-card__description-list-item">16.10.2018</li>
-                            <li class="project-card__description-list-item">80 sq.m</li>
-                        </ul>
-
-                        <div>
-                            <a href="one-project.html" class="project-card__description-name">Eyewear store interior</a>
-                            <a href="one-project.html" class="project-card__description-mode link">Discover more</a>
-                        </div>
-                    </div>
-
-                    <div class="project-card__img-wrap">
-                        <img src="./images/our-projects/1.jpg" alt="design-project" class="project-card__img">
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <a href="#" class="project-card__link">
+                    <a href="one-project.html">
                         <div class="project-card__description">
                             <ul class="project-card__description-list">
                                 <li class="project-card__description-list-item">Lodz</li>
@@ -256,9 +187,242 @@
                             </ul>
 
                             <div>
-                                <a href="one-project.html" class="project-card__description-name">Minimalist style
-                                    home</a>
-                                <a href="one-project.html" class="project-card__description-mode link">Discover more</a>
+                                <div class="project-card__description-name">Eyewear store
+                                    interior
+                                </div>
+                                <div class="project-card__description-mode link">Discover more</div>
+                            </div>
+                        </div>
+
+                        <div class="project-card__img-wrap">
+                            <img src="./images/our-projects/1.jpg" alt="design-project" class="project-card__img">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <a href="one-project.html">
+                        <div class="project-card__description">
+                            <ul class="project-card__description-list">
+                                <li class="project-card__description-list-item">Lodz</li>
+                                <li class="project-card__description-list-item">16.10.2018</li>
+                                <li class="project-card__description-list-item">80 sq.m</li>
+                            </ul>
+
+                            <div>
+                                <div class="project-card__description-name">Minimalist style
+                                    home
+                                </div>
+                                <div class="project-card__description-mode link">Discover more</div>
+                            </div>
+                        </div>
+
+                        <div class="project-card__img-wrap">
+                            <img src="./images/our-projects/2.jpg" alt="design-project" class="project-card__img">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <a href="one-project.html">
+                        <div class="project-card__description">
+                            <ul class="project-card__description-list">
+                                <li class="project-card__description-list-item">Lodz</li>
+                                <li class="project-card__description-list-item">16.10.2018</li>
+                                <li class="project-card__description-list-item">80 sq.m</li>
+                            </ul>
+
+                            <div>
+                                <div class="project-card__description-name">Residence by the
+                                    lighthouse
+                                </div>
+                                <div class="project-card__description-mode link">Discover more</div>
+                            </div>
+                        </div>
+
+                        <div class="project-card__img-wrap">
+                            <img src="./images/our-projects/3.jpg" alt="design-project" class="project-card__img">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <a href="one-project.html">
+                        <div class="project-card__description">
+                            <ul class="project-card__description-list">
+                                <li class="project-card__description-list-item">Lodz</li>
+                                <li class="project-card__description-list-item">16.10.2018</li>
+                                <li class="project-card__description-list-item">80 sq.m</li>
+                            </ul>
+
+                            <div>
+                                <div class="project-card__description-name">Eyewear store
+                                    interior
+                                </div>
+                                <div class="project-card__description-mode link">Discover more</div>
+                            </div>
+                        </div>
+
+                        <div class="project-card__img-wrap">
+                            <img src="./images/our-projects/4.jpg" alt="design-project" class="project-card__img">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <a href="one-project.html">
+                        <div class="project-card__description">
+                            <ul class="project-card__description-list">
+                                <li class="project-card__description-list-item">Lodz</li>
+                                <li class="project-card__description-list-item">16.10.2018</li>
+                                <li class="project-card__description-list-item">80 sq.m</li>
+                            </ul>
+
+                            <div>
+                                <div class="project-card__description-name">Eyewear store
+                                    interior
+                                </div>
+                                <div class="project-card__description-mode link">Discover more</div>
+                            </div>
+                        </div>
+
+                        <div class="project-card__img-wrap">
+                            <img src="./images/our-projects/6.jpg" alt="design-project" class="project-card__img">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <a href="one-project.html">
+                        <div class="project-card__description">
+                            <ul class="project-card__description-list">
+                                <li class="project-card__description-list-item">Lodz</li>
+                                <li class="project-card__description-list-item">16.10.2018</li>
+                                <li class="project-card__description-list-item">80 sq.m</li>
+                            </ul>
+
+                            <div>
+                                <div class="project-card__description-name">Eyewear store
+                                    interior</div>
+                                <div class="project-card__description-mode link">Discover more</div>
+                            </div>
+                        </div>
+
+                        <div class="project-card__img-wrap">
+                            <img src="./images/our-projects/7.jpg" alt="design-project" class="project-card__img">
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="our-projects__catalog tabs-content">
+                <div class="project-card">
+                    <a href="one-project.html">
+                        <div class="project-card__description">
+                            <ul class="project-card__description-list">
+                                <li class="project-card__description-list-item">Lodz</li>
+                                <li class="project-card__description-list-item">16.10.2018</li>
+                                <li class="project-card__description-list-item">80 sq.m</li>
+                            </ul>
+
+                            <div>
+                                <div class="project-card__description-name">Eyewear store
+                                    interior
+                                </div>
+                                <div class="project-card__description-mode link">Discover more</div>
+                            </div>
+                        </div>
+
+                        <div class="project-card__img-wrap">
+                            <img src="./images/our-projects/4.jpg" alt="design-project" class="project-card__img">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <a href="one-project.html">
+                        <div class="project-card__description">
+                            <ul class="project-card__description-list">
+                                <li class="project-card__description-list-item">Lodz</li>
+                                <li class="project-card__description-list-item">16.10.2018</li>
+                                <li class="project-card__description-list-item">80 sq.m</li>
+                            </ul>
+
+                            <div>
+                                <div class="project-card__description-name">Eyewear store
+                                    interior
+                                </div>
+                                <div class="project-card__description-mode link">Discover more</div>
+                            </div>
+                        </div>
+
+                        <div class="project-card__img-wrap">
+                            <img src="./images/our-projects/6.jpg" alt="design-project" class="project-card__img">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <a href="one-project.html">
+                        <div class="project-card__description">
+                            <ul class="project-card__description-list">
+                                <li class="project-card__description-list-item">Lodz</li>
+                                <li class="project-card__description-list-item">16.10.2018</li>
+                                <li class="project-card__description-list-item">80 sq.m</li>
+                            </ul>
+
+                            <div>
+                                <div class="project-card__description-name">Eyewear store
+                                    interior</div>
+                                <div class="project-card__description-mode link">Discover more</div>
+                            </div>
+                        </div>
+
+                        <div class="project-card__img-wrap">
+                            <img src="./images/our-projects/7.jpg" alt="design-project" class="project-card__img">
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="our-projects__catalog tabs-content">
+                <div class="project-card">
+                    <a href="one-project.html">
+                        <div class="project-card__description">
+                            <ul class="project-card__description-list">
+                                <li class="project-card__description-list-item">Lodz</li>
+                                <li class="project-card__description-list-item">16.10.2018</li>
+                                <li class="project-card__description-list-item">80 sq.m</li>
+                            </ul>
+
+                            <div>
+                                <div class="project-card__description-name">Eyewear store
+                                    interior
+                                </div>
+                                <div class="project-card__description-mode link">Discover more</div>
+                            </div>
+                        </div>
+
+                        <div class="project-card__img-wrap">
+                            <img src="./images/our-projects/1.jpg" alt="design-project" class="project-card__img">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <a href="one-project.html">
+                        <div class="project-card__description">
+                            <ul class="project-card__description-list">
+                                <li class="project-card__description-list-item">Lodz</li>
+                                <li class="project-card__description-list-item">16.10.2018</li>
+                                <li class="project-card__description-list-item">80 sq.m</li>
+                            </ul>
+
+                            <div>
+                                <div class="project-card__description-name">Minimalist style
+                                    home
+                                </div>
+                                <div class="project-card__description-mode link">Discover more</div>
                             </div>
                         </div>
 
@@ -271,100 +435,49 @@
 
             <div class="our-projects__catalog tabs-content">
                 <div class="project-card">
-                    <div class="project-card__description">
-                        <ul class="project-card__description-list">
-                            <li class="project-card__description-list-item">Lodz</li>
-                            <li class="project-card__description-list-item">16.10.2018</li>
-                            <li class="project-card__description-list-item">80 sq.m</li>
-                        </ul>
+                    <a href="one-project.html">
+                        <div class="project-card__description">
+                            <ul class="project-card__description-list">
+                                <li class="project-card__description-list-item">Lodz</li>
+                                <li class="project-card__description-list-item">16.10.2018</li>
+                                <li class="project-card__description-list-item">80 sq.m</li>
+                            </ul>
 
-                        <div>
-                            <a href="one-project.html" class="project-card__description-name">Eyewear store interior</a>
-                            <a href="one-project.html" class="project-card__description-mode link">Discover more</a>
+                            <div>
+                                <div class="project-card__description-name">Residence by the
+                                    lighthouse
+                                </div>
+                                <div class="project-card__description-mode link">Discover more</div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="project-card__img-wrap">
-                        <img src="./images/our-projects/1.jpg" alt="design-project" class="project-card__img">
-                    </div>
+                        <div class="project-card__img-wrap">
+                            <img src="./images/our-projects/3.jpg" alt="design-project" class="project-card__img">
+                        </div>
+                    </a>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-card__description">
-                        <ul class="project-card__description-list">
-                            <li class="project-card__description-list-item">Lodz</li>
-                            <li class="project-card__description-list-item">16.10.2018</li>
-                            <li class="project-card__description-list-item">80 sq.m</li>
-                        </ul>
+                    <a href="one-project.html">
+                        <div class="project-card__description">
+                            <ul class="project-card__description-list">
+                                <li class="project-card__description-list-item">Lodz</li>
+                                <li class="project-card__description-list-item">16.10.2018</li>
+                                <li class="project-card__description-list-item">80 sq.m</li>
+                            </ul>
 
-                        <div>
-                            <a href="one-project.html" class="project-card__description-name">Minimalist style home</a>
-                            <a href="one-project.html" class="project-card__description-mode link">Discover more</a>
+                            <div>
+                                <div class="project-card__description-name">Eyewear store
+                                    interior
+                                </div>
+                                <div class="project-card__description-mode link">Discover more</div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="project-card__img-wrap">
-                        <img src="./images/our-projects/2.jpg" alt="design-project" class="project-card__img">
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-card__description">
-                        <ul class="project-card__description-list">
-                            <li class="project-card__description-list-item">Lodz</li>
-                            <li class="project-card__description-list-item">16.10.2018</li>
-                            <li class="project-card__description-list-item">80 sq.m</li>
-                        </ul>
-
-                        <div>
-                            <a href="one-project.html" class="project-card__description-name">Eyewear store interior</a>
-                            <a href="one-project.html" class="project-card__description-mode link">Discover more</a>
+                        <div class="project-card__img-wrap">
+                            <img src="./images/our-projects/4.jpg" alt="design-project" class="project-card__img">
                         </div>
-                    </div>
-
-                    <div class="project-card__img-wrap">
-                        <img src="./images/our-projects/7.jpg" alt="design-project" class="project-card__img">
-                    </div>
-                </div>
-            </div>
-
-            <div class="our-projects__catalog tabs-content">
-                <div class="project-card">
-                    <div class="project-card__description">
-                        <ul class="project-card__description-list">
-                            <li class="project-card__description-list-item">Lodz</li>
-                            <li class="project-card__description-list-item">16.10.2018</li>
-                            <li class="project-card__description-list-item">80 sq.m</li>
-                        </ul>
-
-                        <div>
-                            <a href="one-project.html" class="project-card__description-name">Eyewear store interior</a>
-                            <a href="one-project.html" class="project-card__description-mode link">Discover more</a>
-                        </div>
-                    </div>
-
-                    <div class="project-card__img-wrap">
-                        <img src="./images/our-projects/6.jpg" alt="design-project" class="project-card__img">
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-card__description">
-                        <ul class="project-card__description-list">
-                            <li class="project-card__description-list-item">Lodz</li>
-                            <li class="project-card__description-list-item">16.10.2018</li>
-                            <li class="project-card__description-list-item">80 sq.m</li>
-                        </ul>
-
-                        <div>
-                            <a href="one-project.html" class="project-card__description-name">Eyewear store interior</a>
-                            <a href="one-project.html" class="project-card__description-mode link">Discover more</a>
-                        </div>
-                    </div>
-
-                    <div class="project-card__img-wrap">
-                        <img src="./images/our-projects/1.jpg" alt="design-project" class="project-card__img">
-                    </div>
+                    </a>
                 </div>
             </div>
 
@@ -434,7 +547,7 @@
     </div>
 </footer>
 
-<div class="modal">
+<div class="modal modal-request">
     <div class="modal__wrap">
         <div class="modal__content-wrap">
             <button class="modal__btn-close" id="close-modal">
@@ -552,6 +665,7 @@
                                             <span class="select-type-line__option-text">1000+</span>
                                             <span class="select-type-line__option-point"></span>
                                         </button>
+                                        <div class="select-type-line__item"></div>
                                     </li>
                                 </ul>
                             </div>
@@ -577,11 +691,10 @@
                                     </label>
 
                                     <input type="file" class="input-file__item" id="design-file">
-
                                 </div>
                             </div>
 
-                            <button class="btn btn_full btn_modal">Send Request</button>
+                            <button class="btn btn_full btn_modal open-thanks-modal-btn">Send Request</button>
                         </div>
 
                         <div class="modal__footer">

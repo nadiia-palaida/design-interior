@@ -137,11 +137,16 @@
 @media screen and (max-width: 1200px) {
   .card-news__text-wrap {
     padding: 46px;
-    max-width: 85%;
+    max-width: 100%;
   }
 
   .card-news__title {
     font-size: 20px;
+    max-width: 83%;
+  }
+
+  .card-news__text {
+    margin-bottom: 40px;
   }
 
   .card-news__description-name {
@@ -191,7 +196,11 @@
     padding: 24px;
   }
 
-  .card-news_small {
+  .card-news__title {
+    max-width: 100%;
+  }
+
+    .card-news_small {
     max-width: 100%;
   }
 

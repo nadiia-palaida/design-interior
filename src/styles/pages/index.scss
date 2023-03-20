@@ -180,7 +180,7 @@
 }
 
 .main-about__info-texts-wrap {
-  margin-bottom: 64px;
+  margin-bottom: 40px;
 }
 
 .main-about__images-wrap {
@@ -344,7 +344,7 @@
 .our-projects__info {
   position: relative;
   padding-top: 180px;
-  padding-bottom: 140px;
+  padding-bottom: 180px;
   overflow: hidden;
 }
 
@@ -502,6 +502,7 @@
 
   .our-projects__info {
     padding-top: 142px;
+    padding-bottom: 116px;
   }
 
   .our-projects__info-content {
@@ -530,6 +531,18 @@
 
   .our-projects__info-text_small {
     margin-bottom: 64px;
+  }
+
+  .main-info__social-list {
+    margin-right: 79px;
+  }
+
+  .main-info__city {
+    margin-right: 40px;
+  }
+
+  .section-contacts {
+    padding-top: 104px;
   }
 }
 
@@ -740,6 +753,5 @@
   }
 
   .main-info__content {
-    justify-content: space-between;
   }
 }

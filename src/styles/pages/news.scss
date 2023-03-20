@@ -53,6 +53,12 @@
   max-width: 50%;
 }
 
+.news__card-link {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
 @media screen and (max-width: 1200px) {
   .section-news {
     padding-top: 162px;
@@ -66,7 +72,7 @@
   }
 
   .news__title {
-    margin-bottom: 32px;
+    margin-bottom: 23px;
   }
 
   .news__catalog {
@@ -75,6 +81,11 @@
 
   .news-info__block {
     text-align: left;
+    max-width: 55%;
+
+    &:last-child {
+      max-width: 50%;
+    }
   }
 }
 
@@ -89,7 +100,7 @@
   }
 
   .news__info-block {
-    max-width: 70%;
+    max-width: 75%;
 
     &:last-child {
       max-width: 100%;

@@ -1,21 +1,23 @@
-const menuBtn = document.getElementById('menu-btn')
+const menuBtns = document.querySelectorAll('.menu__mobile-btn')
 const header = document.getElementById('header')
 const menu = document.getElementById('menu')
 const body = document.getElementsByTagName('body')[0]
 
 let activeMobileMenu = false
 
-if(menuBtn) {
-    menuBtn.addEventListener('click', () => {
-        if(activeMobileMenu) {
-            menu.classList.remove('active')
-            menuBtn.classList.remove('active')
-            body.style.overflow = 'auto'
-        } else {
-            body.style.overflow = 'hidden'
-            menu.classList.add('active')
-            menuBtn.classList.add('active')
-        }
-        activeMobileMenu = !activeMobileMenu
-    })
+if(menuBtns.length) {
+    for(let i = 0; i < menuBtns.length; i++) {
+        menuBtns[i].addEventListener('click', () => {
+            if(activeMobileMenu) {
+                menu.classList.remove('active')
+                menuBtns[i].classList.remove('active')
+                body.style.overflow = 'auto'
+            } else {
+                body.style.overflow = 'hidden'
+                menu.classList.add('active')
+                menuBtns[i].classList.add('active')
+            }
+            activeMobileMenu = !activeMobileMenu
+        })
+    }
 }

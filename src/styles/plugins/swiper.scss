@@ -30,7 +30,7 @@
 }
 
 .main-swiper__slide {
-  width: 82% !important;
+  width: 85% !important;
 }
 
 .main-swiper__img-wrap {
@@ -57,7 +57,7 @@
 .main-swiper__item-content {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 40%;
   transform: translate(-50%, -50%);
 }
 
@@ -74,8 +74,8 @@
   height: 11px;
   width: 294px;
   position: absolute;
-  top: 60% !important;
-  left: 83% !important;
+  top: 61% !important;
+  left: 89% !important;
   transform: translateX(-100%);
   z-index: 10;
 }
@@ -113,7 +113,7 @@
 
 .main-swiper__button-next2 {
   position: absolute;
-  left: calc(82% + 44px) !important;
+  left: calc(85% + 44px) !important;
   top: calc(100% - 50px) !important;
   font-family: "Montserrat SemiBold", sans-serif;
   font-size: 11px;
@@ -155,7 +155,7 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  left: 80px;
+  left: 68px;
   bottom: 48px;
   writing-mode: vertical-rl;
   text-orientation: mixed;
@@ -261,15 +261,41 @@
       }
     }
   }
+
+  .main-swiper__slide {
+    width: 83%!important;
+  }
+
+  .main-swiper__button-next2 {
+    left: calc(81% + 39px) !important;
+  }
+
+  .main-swiper__item-left-title {
+    left: 53px;
+  }
+
+  .main-swiper__item-content {
+    left: 45%;
+  }
+
+  .swiper.about-philosophy__description-swiper {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 576px) {
   .main-swiper__item-title {
     font-size: 40px;
+    margin-bottom: 40px;
+    line-height: 39px;
+  }
+
+  .main-swiper__item-content {
+    top: 57%;
   }
 
   .main-swiper__navigation {
-    top: 20%!important;
+    top: 26%!important;
     left: 55%!important;
     transform: translateX(-100%);
     width: 177px;
@@ -303,5 +329,9 @@
 
   .news-swiper {
     //width: 100%;
+  }
+
+  .swiper.about-philosophy__description-swiper {
+    flex-direction: column;
   }
 }

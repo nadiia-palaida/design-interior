@@ -46,7 +46,7 @@
 
 .menu__list {
   display: flex;
-  padding-left: 135px;
+  //padding-left: 135px;
 }
 
 .menu__item {
@@ -260,15 +260,23 @@
   .main-info__city {
     margin-right: 40px;
   }
+
+  .language {
+    margin-right: 56px;
+  }
+
+  .header__btn {
+    padding: 0 35px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .header__logo-wrap {
-    margin-right: 40px;
+    margin-right: 93px;
   }
 
   .language {
-    margin-right: 40px;
+    margin-right: 56px;
   }
 }
 
