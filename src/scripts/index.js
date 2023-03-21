@@ -44,4 +44,34 @@ function unActiveOptions() {
     }
 }
 
+import WOW from 'wow.js'
+ScrollOut();
 
+window.addEventListener('load', () => {
+    new WOW().init();
+})
+
+const galleryImages =  document.querySelectorAll('.gallery__photo-wrap')
+
+/*
+if(galleryImages.length) {
+    function revealCustom() {
+        for (let i = 0; i < galleryImages.length; i++) {
+            let windowHeight = window.innerHeight;
+            let elementTop = galleryImages[i].getBoundingClientRect().top;
+            let elementVisible = 150;
+
+            if (elementTop < windowHeight - elementVisible) {
+                console.log('galleryImages[i]', galleryImages[i].offsetTop)
+                console.log('windowHeight - elementVisible', windowHeight - elementVisible)
+                galleryImages[i].classList.add("active");
+
+                // galleryImages[i].style.top = galleryImages[i].offsetTop + 20
+            } else {
+                galleryImages[i].classList.remove("active");
+            }
+        }
+    }
+
+    window.addEventListener("scroll", revealCustom);
+}*/

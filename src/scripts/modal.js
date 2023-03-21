@@ -34,18 +34,21 @@ if (openThanksBtn) {
 function openModal() {
     body.style.overflow = 'hidden'
 
+    modalRequest.classList.remove('out')
     modalRequest.classList.add('active')
 }
 
 function openThanksModal() {
     body.style.overflow = 'hidden'
 
+    modalThanks.classList.remove('out')
     modalThanks.classList.add('active')
 }
 
 function closeModal() {
     for(let i = 0; i < modal.length; i++) {
         modal[i].classList.remove('active')
+        modal[i].classList.add('out')
     }
     body.style.overflow = 'auto'
 }
