@@ -6,5 +6,5 @@ module.exports = {
     ],*/
     JS_LIBS: [
         'node_modules/babel-polyfill/dist/polyfill.js'
-    ]
+    ],
 }

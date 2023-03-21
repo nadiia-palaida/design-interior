@@ -1,0 +1,31 @@
+.preload {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  background: #080808;
+}
+
+.preload__content {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.preload__title {
+  text-transform: uppercase;
+  font-family: 'Montserrat Light', sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.26em;
+}
+
+.preload__percent-number {
+  &.hide {
+    opacity: 0;
+  }
+}

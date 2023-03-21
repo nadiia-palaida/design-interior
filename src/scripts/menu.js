@@ -10,11 +10,13 @@ if(menuBtns.length) {
         menuBtns[i].addEventListener('click', () => {
             if(activeMobileMenu) {
                 menu.classList.remove('active')
+                header.classList.remove('header-mobile-menu')
                 menuBtns[i].classList.remove('active')
                 body.style.overflow = 'auto'
             } else {
                 body.style.overflow = 'hidden'
                 menu.classList.add('active')
+                header.classList.add('header-mobile-menu')
                 menuBtns[i].classList.add('active')
             }
             activeMobileMenu = !activeMobileMenu

@@ -82,6 +82,9 @@ task('script', () => {
         .pipe(gulpif(env === 'dev', sourcemaps.init()))
         .pipe(webpack({
             mode: env === 'dev' ? 'development' : 'production',
+            experiments: {
+                topLevelAwait: true
+            }
         }))
         .pipe(concat('main.min.js', /*{newLine: ';'}*/))
         .pipe(dest(`${DIST_PATH}`))

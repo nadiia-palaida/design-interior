@@ -4,13 +4,14 @@
   top: 0;
   height: 100vh;
   width: 100vw;
-  z-index: 200;
-  display: none;
   overflow: auto;
   background: rgba(8, 8, 8, .96);
+  opacity: 0;
+  z-index: -1;
 
   &.active {
-    display: block;
+    opacity: 1;
+    z-index: 200;
   }
 }
 

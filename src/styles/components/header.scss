@@ -13,6 +13,20 @@
   }
 }
 
+.header-mobile-menu {
+  .menu__mobile-icon__line {
+    background: $text-light!important;
+  }
+
+  .header__logo, .header__btn, .language__active {
+    color: $text-light!important;
+  }
+
+  .header__btn  {
+    border-color: $text-light!important;
+  }
+}
+
 .header__content {
   width: 100%;
   height: 100%;

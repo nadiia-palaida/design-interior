@@ -41,6 +41,11 @@
   }
 }
 
+.mobile-menu__btn-request  {
+  border-color: $text-light!important;
+  color: $text-light!important;
+}
+
 @media screen and (max-width: 1200px) {
   .menu__mobile-btn {
     display: flex;
