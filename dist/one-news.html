@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<!--    <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>-->
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+</head>
+
+<body class="page-dark">
+
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__content">
+            <div class="header__content-block">
+                <div class="header__logo-wrap">
+                    <a href="index.html" class="header__logo">
+                        LOGO
+                    </a>
+                </div>
+
+                <div class="menu__block-wrap">
+                    <div class="menu">
+                        <button class="menu__mobile-btn menu__mobile-btn__logo" id="menu-btn">
+                            <div class="menu__mobile-icon">
+                                <div class="menu__mobile-icon__line"></div>
+                                <div class="menu__mobile-icon__line"></div>
+                            </div>
+                            <div class="menu__mobile-title">Menu</div>
+                        </button>
+
+                        <div class="menu__list-wrap">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="projects.html" class="menu__link">Projects</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="about.html" class="menu__link">About us</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="news.html" class="menu__link">Blog</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="contact.html" class="menu__link">Contacts</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="language-wrap">
+                        <div class="language">
+                            <button class="language__active">En</button>
+
+                            <ul class="language__list">
+                                <li class="language__item">
+                                    <button class="language__btn">
+                                        UA
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button class="header__btn btn btn_empty make-request-btn">Send Request</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="menu menu-mobile" id="menu">
+    <div class="menu__list-wrap text-container">
+            <ul class="menu__list">
+                <li class="menu__item menu__item_mobile active">
+                    <a href="index.html" class="menu__link">Home</a>
+                </li>
+                <li class="menu__item menu__item_mobile">
+                    <a href="projects.html" class="menu__link">Projects</a>
+                </li>
+                <li class="menu__item menu__item_mobile">
+                    <a href="about.html" class="menu__link">About us</a>
+                </li>
+                <li class="menu__item menu__item_mobile">
+                    <a href="news.html" class="menu__link">Blog</a>
+                </li>
+                <li class="menu__item menu__item_mobile">
+                    <a href="contact.html" class="menu__link">Contacts</a>
+                </li>
+                <li class="menu__item menu__item_mobile">
+                    <button class="mobile-menu__btn-request btn btn_empty make-request-btn">Send Request</button>
+                </li>
+            </ul>
+    </div>
+
+    <div class="menu__main-info-wrap">
+        <div class="main-info menu__main-info">
+            <div class="container">
+                <div class="main-info__content">
+                    <ul class="main-info__social-list">
+                        <li class="main-info__social-item">
+                            <a href="#" class="main-info__social-link">Fb</a>
+                        </li>
+                        <li class="main-info__social-item">
+                            <a href="#" class="main-info__social-link">In</a>
+                        </li>
+                        <li class="main-info__social-item">
+                            <a href="#" class="main-info__social-link">Be</a>
+                        </li>
+                    </ul>
+
+                    <div class="main-info__city">
+                        <select name="City" id="City" class="select-city">
+                            <option value="Berlin" selected class="select-city__option">Berlin</option>
+                            <option value="Lublin" class="select-city__option">Lublin</option>
+                            <option value="Warszawa" class="select-city__option">Warszawa</option>
+                            <option value="Lviv" class="select-city__option">Lviv</option>
+                        </select>
+                    </div>
+
+                    <ul class="main-info__contacts">
+                        <li class="main-info__contacts-item">
+                            <a href="tel:+380983527547" class="main-info__contacts-link">+380983527547</a>
+                        </li>
+                        <li class="main-info__contacts-item">
+                            <a href="mailto: info@gmail.com" class="main-info__contacts-link">E: info@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="section-news one-news">
+    <div class="container">
+        <div class="news__content">
+            <div class="text-container">
+                <div class="news__top one-news__top">
+                    <div class="one-news__top-block">
+                        <h1 class="one-news__title title">Antrax IT - Italian factory for the production</h1>
+                    </div>
+
+                    <div class="one-news__top-block one-news__top-block_socials">
+                        <div class="one-news__socials">
+                            <div class="one-news__socials-title">Share:</div>
+
+                            <ul class="one-news__socials-list">
+                                <li class="one-news__socials-item">
+                                    <a href="#">
+                                        <img src="./images/socials/facebook.svg" alt="facebook">
+                                    </a>
+                                </li>
+                                <li class="one-news__socials-item">
+                                    <a href="#">
+                                        <img src="./images/socials/twitter.svg" alt="twitter">
+                                    </a>
+                                </li>
+                                <li class="one-news__socials-item">
+                                    <a href="#">
+                                        <img src="./images/socials/linkedin.svg" alt="linkedin">
+                                    </a>
+                                </li>
+                                <li class="one-news__socials-item">
+                                    <a href="#">
+                                        <img src="./images/socials/link.svg" alt="link">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="one-news__content">
+                <div class="text-container">
+                    <div class="one-news__text-wrap">
+                        <p class="one-news__text text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel gravida urna. Donec
+                            blandit
+                            sapien
+                            eu diam ullamcorper euismod. Nam tempus pellentesque ligula ut aliquam. Donec et ipsum nec
+                            quam
+                            posuere maximus eu in erat. Duis laoreet finibus consectetur. Nullam pulvinar ex sit amet
+                            leo
+                            gravida, sed mattis enim vehicula. Duis purus nisl, consectetur ut est non, placerat
+                            eleifend
+                            turpis. Duis auctor suscipit arcu. Aenean leo est, rutrum a eleifend eget, tempor nec urna.
+                            Proin
+                            finibus lobortis arcu dictum convallis. Ut fermentum eu magna vel laoreet. In lacus augue,
+                            malesuada
+                            id elit sit amet,
+                            varius imperdiet ex. Nullam blandit lobortis posuere.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="one-news__img-wrap">
+                    <img src="./images/one-news/1.jpg" alt="design photo" class="one-news__img">
+                </div>
+
+                <div class="text-container">
+                    <div class="one-news__text-wrap">
+                        <div class="one-news__text-subtitle">Donec et ipsum nec quam posuere maximus eu in erat. Duis
+                            laoreet
+                            finibus consectetur.
+                        </div>
+
+                        <p class="one-news__text text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel gravida urna. Donec
+                            blandit
+                            sapien
+                            eu diam ullamcorper euismod. Nam tempus pellentesque ligula ut aliquam. Donec et ipsum nec
+                            quam
+                            posuere maximus eu in erat. Duis laoreet finibus consectetur. Nullam pulvinar ex sit amet
+                            leo
+                            gravida, sed mattis enim vehicula. Duis purus nisl, consectetur ut est non, placerat
+                            eleifend
+                            turpis. Duis auctor suscipit arcu. Aenean leo est, rutrum a eleifend eget, tempor nec urna.
+                            Proin
+                            finibus lobortis arcu dictum convallis. Ut fermentum eu magna vel laoreet. In lacus augue,
+                            malesuada
+                            id elit sit amet,
+                            varius imperdiet ex. Nullam blandit lobortis posuere.
+                        </p>
+
+                        <ol class="one-news__text-list">
+                            <li class="one-news__text-list-item text"><span class="one-news__text-list-number">1.</span>Lorem
+                                ipsum dolor sit amet, consectetur adipiscing elit.
+                            </li>
+                            <li class="one-news__text-list-item text"><span class="one-news__text-list-number">2.</span>Cras
+                                vel gravida urna. Donec blandit sapien eu diam ullamcorper euismod.
+                            </li>
+                            <li class="one-news__text-list-item text"><span class="one-news__text-list-number">3.</span>Nam
+                                tempus pellentesque ligula ut aliquam.
+                            </li>
+                            <li class="one-news__text-list-item text"><span class="one-news__text-list-number">4.</span>Donec
+                                et ipsum nec quam posuere maximus eu in erat.
+                            </li>
+                            <li class="one-news__text-list-item text"><span class="one-news__text-list-number">5.</span>Duis
+                                laoreet finibus consectetur.
+                            </li>
+                        </ol>
+
+                        <p class="one-news__text text">
+                            Aliquam iaculis ac urna at consequat. Pellentesque fermentum tellus eu nisi viverra gravida.
+                            Sed
+                            suscipit vestibulum accumsan. Sed ac magna id sem hendrerit convallis quis a magna. Mauris
+                            eget
+                            ornare est. Morbi metus justo, posuere vel semper semper, eleifend ut purus. Morbi cursus
+                            consequat nibh, a feugiat felis tempor vitae. Interdum et malesuada fames ac ante ipsum
+                            primis
+                            in faucibus. Nam sodales orci nisl, in lacinia risus rhoncus a. Praesent consectetur egestas
+                            risus, id consectetur felis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="one-news__img-wrap">
+                    <img src="./images/one-news/2.jpg" alt="design photo" class="one-news__img">
+
+                    <div class="one-news__img-wrap one-news__img-wrap_some">
+                        <img src="./images/one-news/3.jpg" alt="design photo" class="one-news__img one-news__img_small">
+                        <img src="./images/one-news/4.jpg" alt="design photo" class="one-news__img one-news__img_small">
+                    </div>
+                </div>
+
+                <div class="text-container text-container_bordered">
+                    <div class="one-news__text-wrap">
+                        <div class="one-news__text-subtitle">Duis laoreet finibus consectetur.
+                        </div>
+
+                        <p class="one-news__text text">
+                            Duis laoreet finibus consectetur. Nullam pulvinar ex sit amet leo gravida, sed mattis enim
+                            vehicula. Duis purus nisl, consectetur ut est non, placerat eleifend turpis. Duis auctor
+                            suscipit arcu. Aenean leo est, rutrum a eleifend eget, tempor nec urna. Proin finibus
+                            lobortis
+                            arcu dictum convallis. Ut fermentum eu magna vel laoreet. In lacus augue, malesuada id elit
+                            sit
+                            amet, varius imperdiet ex. Nullam blandit lobortis posuere:
+                        </p>
+
+                        <ol class="one-news__text-list one-news__text-list_marked">
+                            <li class="one-news__text-list-item one-news__text-list-item_marked text">Lorem ipsum dolor
+                                sit
+                                amet, consectetur adipiscing
+                                elit.
+                            </li>
+                            <li class="one-news__text-list-item one-news__text-list-item_marked text">Cras vel gravida
+                                urna.
+                                Donec blandit sapien eu diam
+                                ullamcorper euismod.
+                            </li>
+                            <li class="one-news__text-list-item one-news__text-list-item_marked text">Nam tempus
+                                pellentesque ligula ut aliquam.
+                            </li>
+                            <li class="one-news__text-list-item one-news__text-list-item_marked text">Donec et ipsum nec
+                                quam posuere maximus eu in erat.
+                            </li>
+                        </ol>
+
+                        <p class="one-news__text text">
+                            Aliquam iaculis ac urna at consequat. Pellentesque fermentum tellus eu nisi viverra gravida.
+                            Sed
+                            suscipit vestibulum accumsan. Sed ac magna id sem hendrerit convallis quis a magna. Mauris
+                            eget
+                            ornare est. Morbi metus justo, posuere vel semper semper, eleifend ut purus. Morbi cursus
+                            consequat nibh, a feugiat felis tempor vitae. Interdum et malesuada fames ac ante ipsum
+                            primis
+                            in faucibus. Nam sodales orci nisl, in lacinia risus rhoncus a. Praesent consectetur egestas
+                            risus, id consectetur felis.
+                        </p>
+
+                        <div class="one-news__socials one-news__socials_mobile">
+                            <div class="one-news__socials-title">Share:</div>
+
+                            <ul class="one-news__socials-list">
+                                <li class="one-news__socials-item">
+                                    <a href="#">
+                                        <img src="./images/socials/facebook.svg" alt="facebook">
+                                    </a>
+                                </li>
+                                <li class="one-news__socials-item">
+                                    <a href="#">
+                                        <img src="./images/socials/twitter.svg" alt="twitter">
+                                    </a>
+                                </li>
+                                <li class="one-news__socials-item">
+                                    <a href="#">
+                                        <img src="./images/socials/linkedin.svg" alt="linkedin">
+                                    </a>
+                                </li>
+                                <li class="one-news__socials-item">
+                                    <a href="#">
+                                        <img src="./images/socials/link.svg" alt="link">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-latest-news latest-news">
+    <div class="container">
+        <div class="latest-news__content">
+            <div class="section__label">blog</div>
+
+            <div class="text-container">
+                <h2 class="latest-news__title title">Our latest news</h2>
+            </div>
+
+            <div class="text-container">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="news-swiper__wrap ">
+        <div class="container">
+            <div class="text-container">
+                <div class="news-swiper__container">
+                    <div class="news-swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide news-swiper__slide">
+                                <div class="card-latest-news">
+                                    <div>
+                                        <div class="card-latest-news__img-wrap">
+                                            <img src="./images/latest-news/1.jpg" alt="design" class="card-latest-news__img">
+                                        </div>
+                                    </div>
+
+                                    <div class="card-latest-news__title">
+                                        <a href="one-news.html">Antrax IT - Italian factory for the production of radiators</a>
+                                    </div>
+
+                                    <div class="card-latest-news__date">01 January 2019</div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide news-swiper__slide">
+                                <div class="card-latest-news">
+                                    <div class="card-latest-news__img-wrap">
+                                        <img src="./images/latest-news/2.jpg" alt="design" class="card-latest-news__img">
+                                    </div>
+
+                                    <div class="card-latest-news__title">
+                                        <a href="one-news.html">Antrax IT - Italian factory for the production of radiators</a>
+                                    </div>
+
+                                    <div class="card-latest-news__date">01 January 2019</div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide news-swiper__slide">
+                                <div class="card-latest-news">
+                                    <div class="card-latest-news__img-wrap">
+                                        <img src="./images/latest-news/3.jpg" alt="design" class="card-latest-news__img">
+                                    </div>
+
+                                    <div class="card-latest-news__title">
+                                        <a href="one-news.html">Antrax IT - Italian factory for the production of radiators</a>
+                                    </div>
+
+                                    <div class="card-latest-news__date">01 January 2019</div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide news-swiper__slide">
+                                <div class="card-latest-news">
+                                    <div class="card-latest-news__img-wrap">
+                                        <img src="./images/latest-news/4.jpg" alt="design" class="card-latest-news__img">
+                                    </div>
+
+                                    <div class="card-latest-news__title">
+                                        <a href="one-news.html">Antrax IT - Italian factory for the production of radiators</a>
+                                    </div>
+
+                                    <div class="card-latest-news__date">01 January 2019</div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide news-swiper__slide">
+                                <div class="card-latest-news">
+                                    <div class="card-latest-news__img-wrap">
+                                        <img src="./images/latest-news/2.jpg" alt="design" class="card-latest-news__img">
+                                    </div>
+
+                                    <div class="card-latest-news__title">
+                                        <a href="one-news.html">Antrax IT - Italian factory for the production of radiators</a>
+                                    </div>
+
+                                    <div class="card-latest-news__date">01 January 2019</div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide news-swiper__slide">
+                                <div class="card-latest-news">
+                                    <div class="card-latest-news__img-wrap">
+                                        <img src="./images/latest-news/3.jpg" alt="design" class="card-latest-news__img">
+                                    </div>
+
+                                    <div class="card-latest-news__title">
+                                        <a href="one-news.html">Antrax IT - Italian factory for the production of radiators</a>
+                                    </div>
+
+                                    <div class="card-latest-news__date">01 January 2019</div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide news-swiper__slide">
+                                <div class="card-latest-news">
+                                    <div class="card-latest-news__img-wrap">
+                                        <img src="./images/latest-news/4.jpg" alt="design" class="card-latest-news__img">
+                                    </div>
+
+                                    <div class="card-latest-news__title">
+                                        <a href="one-news.html">Antrax IT - Italian factory for the production of radiators</a>
+                                    </div>
+
+                                    <div class="card-latest-news__date">01 January 2019</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__content">
+            <div class="footer__content-block">
+                <div class="footer__text">© Copyright 2018. All rights reserved</div>
+            </div>
+
+            <div class="footer__content-block">
+                <div class="footer__text">Made with love in</div>
+
+                <div class="footer__partner-logo">
+                    <a href="#" class="footer__partner-link">
+                      <span class="footer__partner-text">The First</span>
+                      <span class="footer__partner-text">The Last.</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="preload" id="preloader">
+    <div class="container">
+        <div class="preload__content">
+            <div class="preload__title title">HI</div>
+            <div id="animation-value" class="preload__percent-number preload__title title"></div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-request">
+    <div class="modal__wrap">
+        <button class="modal__btn-close" id="close-modal">
+            <svg viewBox="0 0 9 9" width="9" height="9" class="input-file__btn-icon">
+                <use xlink:href="./images/icons/sprite.svg#cross"></use>
+            </svg>
+        </button>
+
+        <div class="modal__content-wrap">
+            <div class="container">
+                <div class="modal__content">
+                    <div class="modal__block">
+                        <h3 class="modal__title">Calculate the cost of work</h3>
+
+                        <form action="#" class="modal__form">
+                            <div class="modal__input">
+                                <div class="input__wrap input__wrap_modal">
+                                    <input type="text" class="input" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="modal__input">
+                                <div class="input__wrap input__wrap_modal">
+                                    <input type="text" class="input" placeholder="Last name">
+                                </div>
+                            </div>
+                            <div class="modal__input">
+                                <div class="input__wrap input__wrap_modal">
+                                    <input type="text" class="input" placeholder="Phone">
+                                </div>
+                            </div>
+                            <div class="modal__input">
+                                <div class="input__wrap input__wrap_modal">
+                                    <input type="text" class="input" placeholder="Your city">
+                                </div>
+                            </div>
+                            <div class="modal__input">
+                                <div class="input__wrap input__wrap_modal">
+                                    <input type="text" class="input" placeholder="Email">
+                                </div>
+                            </div>
+
+                            <div class="modal__input">
+                                <select name="Property type" id="Property-type" class="select_modal">
+                                    <option value="Design" selected class="select-modal__option">Design</option>
+                                    <option value="Design2" class="select-modal__option">Design2</option>
+                                    <option value="Design3" class="select-modal__option">Design3</option>
+                                </select>
+                            </div>
+
+                            <div class="modal__input">
+                                <div class="input__wrap input__wrap_modal">
+                                    <input type="text" class="input" placeholder="Your comment">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modal__block">
+                        <div class="modal__subtitle modal__subtitle-select">Area (m2)</div>
+
+                        <div class="modal__select">
+                            <div class="select-type-line">
+                                <ul class="type-line__list">
+                                    <li class="select-type-line__option">
+                                        <button class="select-type-line__option-btn" data-value="to 50">
+                                            <span class="select-type-line__option-text">to 50</span>
+                                            <span class="select-type-line__option-point"></span>
+                                        </button>
+
+                                        <div class="select-type-line__item"></div>
+                                    </li>
+                                    <li class="select-type-line__option">
+                                        <button class="select-type-line__option-btn" data-value="50-150">
+                                            <span class="select-type-line__option-text">50-150</span>
+                                            <span class="select-type-line__option-point"></span>
+                                        </button>
+                                        <div class="select-type-line__item"></div>
+                                    </li>
+                                    <li class="select-type-line__option">
+                                        <button class="select-type-line__option-btn" data-value="150-250">
+                                            <span class="select-type-line__option-text">150-250</span>
+                                            <span class="select-type-line__option-point"></span>
+                                        </button>
+                                        <div class="select-type-line__item"></div>
+                                    </li>
+                                    <li class="select-type-line__option">
+                                        <button class="select-type-line__option-btn" data-value="250-400">
+                                            <span class="select-type-line__option-text">250-400</span>
+                                            <span class="select-type-line__option-point"></span>
+                                        </button>
+                                        <div class="select-type-line__item"></div>
+                                    </li>
+                                    <li class="select-type-line__option">
+                                        <button class="select-type-line__option-btn" data-value="400-600">
+                                            <span class="select-type-line__option-text">400-600</span>
+                                            <span class="select-type-line__option-point"></span>
+                                        </button>
+                                        <div class="select-type-line__item"></div>
+                                    </li>
+                                    <li class="select-type-line__option">
+                                        <button class="select-type-line__option-btn" data-value="600-800">
+                                            <span class="select-type-line__option-text">600-800</span>
+                                            <span class="select-type-line__option-point"></span>
+                                        </button>
+                                        <div class="select-type-line__item"></div>
+                                    </li>
+                                    <li class="select-type-line__option">
+                                        <button class="select-type-line__option-btn" data-value="800-1000">
+                                            <span class="select-type-line__option-text">800-1000</span>
+                                            <span class="select-type-line__option-point"></span>
+                                        </button>
+                                        <div class="select-type-line__item"></div>
+                                    </li>
+                                    <li class="select-type-line__option">
+                                        <button class="select-type-line__option-btn" data-value="1000+">
+                                            <span class="select-type-line__option-text">1000+</span>
+                                            <span class="select-type-line__option-point"></span>
+                                        </button>
+                                        <div class="select-type-line__item"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="modal__send-wrap">
+                            <div class="modal__file">
+                                <div class="input-file">
+                                    <label class="input-file__label" for="design-file">
+                                    <span class="input-file__btn">
+                                         <span class="input-file__btn-icon-wrap">
+                                             <svg viewBox="0 0 9 9" width="9" height="9" class="input-file__btn-icon">
+                                                <use xlink:href="./images/icons/sprite.svg#plus"></use>
+                                            </svg>
+                                        </span>
+                                    </span>
+
+                                        <span class="input-file__btn-text modal__text" id="design-file-text">
+                                        <span class="modal__subtitle input-file__btn-text-title">Attach your file</span>
+
+                                        <span class="modal__text">File size not more than 10 MB</span>
+                                    </span>
+                                    </label>
+
+                                    <input type="file" class="input-file__item" id="design-file">
+                                </div>
+                            </div>
+
+                            <button class="btn btn_full btn_modal open-thanks-modal-btn">Send Request</button>
+                        </div>
+
+                        <div class="modal__footer">
+                            <div class="modal__footer-text">
+                                It is a long established fact that a reader will be distracted by the readable content
+                                of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                                more-or-less normal distribution of letters, as opposed to using 'Content here, content
+                                here', making it look like readable English.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-thanks">
+    <div class="modal__wrap">
+        <div class="modal__content-wrap">
+            <button class="modal__btn-close" id="close-modal">
+                <svg viewBox="0 0 9 9" width="9" height="9" class="input-file__btn-icon">
+                    <use xlink:href="./images/icons/sprite.svg#cross"></use>
+                </svg>
+            </button>
+
+            <div class="container">
+                <div class="modal__content modal__content_thanks">
+                    <div class="modal__block modal__block_thanks">
+                        <div class="modal-thanks__text-wrap">
+                            <h3 class="modal__title modal-thanks__title">Thank you for your message!</h3>
+
+                            <div class="modal-thanks__text text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae
+                                posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.
+                            </div>
+
+                            <button class="btn btn_full make-request-btn btn_modal">Send Again</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="main.min.js"></script>
+</body>
+</html>
