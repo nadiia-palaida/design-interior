@@ -289,10 +289,19 @@ input::placeholder {
 }
 
 .input__wrap {
+  position: relative;
   display: flex;
   align-items: center;
   padding-bottom: 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.just-validate-error-label {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  font-family: 'Montserrat Light', sans-serif;
+  font-size: 10px;
 }
 
 .input__wrap_dark {
@@ -423,6 +432,7 @@ input::placeholder {
   font-size: 11px;
   color: $text-modal;
   line-height: 13px;
+  background: transparent;
 }
 
 .select-modal__option {

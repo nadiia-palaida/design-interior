@@ -783,133 +783,134 @@
 </div>
 
 <div class="modal modal-request">
-    <div class="modal__wrap">
-        <button class="modal__btn-close" id="close-modal">
-            <svg viewBox="0 0 9 9" width="9" height="9" class="input-file__btn-icon">
-                <use xlink:href="./images/icons/sprite.svg#cross"></use>
-            </svg>
-        </button>
+    <button class="modal__btn-close" id="close-modal">
+        <svg viewBox="0 0 9 9" width="9" height="9" class="input-file__btn-icon">
+            <use xlink:href="./images/icons/sprite.svg#cross"></use>
+        </svg>
+    </button>
 
+    <div class="modal__wrap">
         <div class="modal__content-wrap">
             <div class="container">
                 <div class="modal__content">
-                    <div class="modal__block">
-                        <h3 class="modal__title">Calculate the cost of work</h3>
+                    <form action="#" id="form-request">
+                        <div class="modal__block">
+                            <h3 class="modal__title">Calculate the cost of work</h3>
 
-                        <form action="#" class="modal__form">
-                            <div class="modal__input">
-                                <div class="input__wrap input__wrap_modal">
-                                    <input type="text" class="input" placeholder="Name">
+                            <div class="modal__form">
+                                <div class="modal__input">
+                                    <div class="input__wrap input__wrap_modal">
+                                        <input type="text" id="name" class="input" placeholder="Name">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="modal__input">
-                                <div class="input__wrap input__wrap_modal">
-                                    <input type="text" class="input" placeholder="Last name">
+                                <div class="modal__input">
+                                    <div class="input__wrap input__wrap_modal">
+                                        <input type="text" id="last-name" class="input" placeholder="Last name">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="modal__input">
-                                <div class="input__wrap input__wrap_modal">
-                                    <input type="text" class="input" placeholder="Phone">
+                                <div class="modal__input">
+                                    <div class="input__wrap input__wrap_modal">
+                                        <input type="text" id="phone" class="input" placeholder="Phone">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="modal__input">
-                                <div class="input__wrap input__wrap_modal">
-                                    <input type="text" class="input" placeholder="Your city">
+                                <div class="modal__input">
+                                    <div class="input__wrap input__wrap_modal">
+                                        <input type="text" id="city" class="input" placeholder="Your city">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="modal__input">
-                                <div class="input__wrap input__wrap_modal">
-                                    <input type="text" class="input" placeholder="Email">
+                                <div class="modal__input">
+                                    <div class="input__wrap input__wrap_modal">
+                                        <input type="text" id="email" class="input" placeholder="Email">
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="modal__input">
-                                <select name="Property type" id="Property-type" class="select_modal">
-                                    <option value="Design" selected class="select-modal__option">Design</option>
-                                    <option value="Design2" class="select-modal__option">Design2</option>
-                                    <option value="Design3" class="select-modal__option">Design3</option>
-                                </select>
-                            </div>
-
-                            <div class="modal__input">
-                                <div class="input__wrap input__wrap_modal">
-                                    <input type="text" class="input" placeholder="Your comment">
+                                <div class="modal__input">
+                                    <select name="Property type" id="Property-type" class="select_modal">
+                                        <option value="Design" selected class="select-modal__option">Design</option>
+                                        <option value="Design2" class="select-modal__option">Design2</option>
+                                        <option value="Design3" class="select-modal__option">Design3</option>
+                                    </select>
                                 </div>
-                            </div>
-                        </form>
-                    </div>
 
-                    <div class="modal__block">
-                        <div class="modal__subtitle modal__subtitle-select">Area (m2)</div>
-
-                        <div class="modal__select">
-                            <div class="select-type-line">
-                                <ul class="type-line__list">
-                                    <li class="select-type-line__option">
-                                        <button class="select-type-line__option-btn" data-value="to 50">
-                                            <span class="select-type-line__option-text">to 50</span>
-                                            <span class="select-type-line__option-point"></span>
-                                        </button>
-
-                                        <div class="select-type-line__item"></div>
-                                    </li>
-                                    <li class="select-type-line__option">
-                                        <button class="select-type-line__option-btn" data-value="50-150">
-                                            <span class="select-type-line__option-text">50-150</span>
-                                            <span class="select-type-line__option-point"></span>
-                                        </button>
-                                        <div class="select-type-line__item"></div>
-                                    </li>
-                                    <li class="select-type-line__option">
-                                        <button class="select-type-line__option-btn" data-value="150-250">
-                                            <span class="select-type-line__option-text">150-250</span>
-                                            <span class="select-type-line__option-point"></span>
-                                        </button>
-                                        <div class="select-type-line__item"></div>
-                                    </li>
-                                    <li class="select-type-line__option">
-                                        <button class="select-type-line__option-btn" data-value="250-400">
-                                            <span class="select-type-line__option-text">250-400</span>
-                                            <span class="select-type-line__option-point"></span>
-                                        </button>
-                                        <div class="select-type-line__item"></div>
-                                    </li>
-                                    <li class="select-type-line__option">
-                                        <button class="select-type-line__option-btn" data-value="400-600">
-                                            <span class="select-type-line__option-text">400-600</span>
-                                            <span class="select-type-line__option-point"></span>
-                                        </button>
-                                        <div class="select-type-line__item"></div>
-                                    </li>
-                                    <li class="select-type-line__option">
-                                        <button class="select-type-line__option-btn" data-value="600-800">
-                                            <span class="select-type-line__option-text">600-800</span>
-                                            <span class="select-type-line__option-point"></span>
-                                        </button>
-                                        <div class="select-type-line__item"></div>
-                                    </li>
-                                    <li class="select-type-line__option">
-                                        <button class="select-type-line__option-btn" data-value="800-1000">
-                                            <span class="select-type-line__option-text">800-1000</span>
-                                            <span class="select-type-line__option-point"></span>
-                                        </button>
-                                        <div class="select-type-line__item"></div>
-                                    </li>
-                                    <li class="select-type-line__option">
-                                        <button class="select-type-line__option-btn" data-value="1000+">
-                                            <span class="select-type-line__option-text">1000+</span>
-                                            <span class="select-type-line__option-point"></span>
-                                        </button>
-                                        <div class="select-type-line__item"></div>
-                                    </li>
-                                </ul>
+                                <div class="modal__input" id="comment">
+                                    <div class="input__wrap input__wrap_modal">
+                                        <input type="text" class="input" placeholder="Your comment">
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="modal__send-wrap">
-                            <div class="modal__file">
-                                <div class="input-file">
-                                    <label class="input-file__label" for="design-file">
+                        <div class="modal__block">
+                            <div class="modal__subtitle modal__subtitle-select">Area (m2)</div>
+
+                            <div class="modal__select">
+                                <div class="select-type-line">
+                                    <ul class="type-line__list">
+                                        <li class="select-type-line__option">
+                                            <button class="select-type-line__option-btn" data-value="to 50">
+                                                <span class="select-type-line__option-text">to 50</span>
+                                                <span class="select-type-line__option-point"></span>
+                                            </button>
+
+                                            <div class="select-type-line__item"></div>
+                                        </li>
+                                        <li class="select-type-line__option">
+                                            <button class="select-type-line__option-btn" data-value="50-150">
+                                                <span class="select-type-line__option-text">50-150</span>
+                                                <span class="select-type-line__option-point"></span>
+                                            </button>
+                                            <div class="select-type-line__item"></div>
+                                        </li>
+                                        <li class="select-type-line__option">
+                                            <button class="select-type-line__option-btn" data-value="150-250">
+                                                <span class="select-type-line__option-text">150-250</span>
+                                                <span class="select-type-line__option-point"></span>
+                                            </button>
+                                            <div class="select-type-line__item"></div>
+                                        </li>
+                                        <li class="select-type-line__option">
+                                            <button class="select-type-line__option-btn" data-value="250-400">
+                                                <span class="select-type-line__option-text">250-400</span>
+                                                <span class="select-type-line__option-point"></span>
+                                            </button>
+                                            <div class="select-type-line__item"></div>
+                                        </li>
+                                        <li class="select-type-line__option">
+                                            <button class="select-type-line__option-btn" data-value="400-600">
+                                                <span class="select-type-line__option-text">400-600</span>
+                                                <span class="select-type-line__option-point"></span>
+                                            </button>
+                                            <div class="select-type-line__item"></div>
+                                        </li>
+                                        <li class="select-type-line__option">
+                                            <button class="select-type-line__option-btn" data-value="600-800">
+                                                <span class="select-type-line__option-text">600-800</span>
+                                                <span class="select-type-line__option-point"></span>
+                                            </button>
+                                            <div class="select-type-line__item"></div>
+                                        </li>
+                                        <li class="select-type-line__option">
+                                            <button class="select-type-line__option-btn" data-value="800-1000">
+                                                <span class="select-type-line__option-text">800-1000</span>
+                                                <span class="select-type-line__option-point"></span>
+                                            </button>
+                                            <div class="select-type-line__item"></div>
+                                        </li>
+                                        <li class="select-type-line__option">
+                                            <button class="select-type-line__option-btn" data-value="1000+">
+                                                <span class="select-type-line__option-text">1000+</span>
+                                                <span class="select-type-line__option-point"></span>
+                                            </button>
+                                            <div class="select-type-line__item"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="modal__send-wrap">
+                                <div class="modal__file">
+                                    <div class="input-file">
+                                        <label class="input-file__label" for="design-file">
                                     <span class="input-file__btn">
                                          <span class="input-file__btn-icon-wrap">
                                              <svg viewBox="0 0 9 9" width="9" height="9" class="input-file__btn-icon">
@@ -918,29 +919,30 @@
                                         </span>
                                     </span>
 
-                                        <span class="input-file__btn-text modal__text" id="design-file-text">
+                                            <span class="input-file__btn-text modal__text" id="design-file-text">
                                         <span class="modal__subtitle input-file__btn-text-title">Attach your file</span>
 
                                         <span class="modal__text">File size not more than 10 MB</span>
                                     </span>
-                                    </label>
+                                        </label>
 
-                                    <input type="file" class="input-file__item" id="design-file">
+                                        <input type="file" class="input-file__item" id="design-file">
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn_full btn_modal open-thanks-modal-btn">Send Request</button>
+                            </div>
+
+                            <div class="modal__footer">
+                                <div class="modal__footer-text">
+                                    It is a long established fact that a reader will be distracted by the readable content
+                                    of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                                    more-or-less normal distribution of letters, as opposed to using 'Content here, content
+                                    here', making it look like readable English.
                                 </div>
                             </div>
-
-                            <button class="btn btn_full btn_modal open-thanks-modal-btn">Send Request</button>
                         </div>
-
-                        <div class="modal__footer">
-                            <div class="modal__footer-text">
-                                It is a long established fact that a reader will be distracted by the readable content
-                                of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                                more-or-less normal distribution of letters, as opposed to using 'Content here, content
-                                here', making it look like readable English.
-                            </div>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -948,14 +950,14 @@
 </div>
 
 <div class="modal modal-thanks">
+    <button class="modal__btn-close" id="close-modal">
+        <svg viewBox="0 0 9 9" width="9" height="9" class="input-file__btn-icon">
+            <use xlink:href="./images/icons/sprite.svg#cross"></use>
+        </svg>
+    </button>
+
     <div class="modal__wrap">
         <div class="modal__content-wrap">
-            <button class="modal__btn-close" id="close-modal">
-                <svg viewBox="0 0 9 9" width="9" height="9" class="input-file__btn-icon">
-                    <use xlink:href="./images/icons/sprite.svg#cross"></use>
-                </svg>
-            </button>
-
             <div class="container">
                 <div class="modal__content modal__content_thanks">
                     <div class="modal__block modal__block_thanks">

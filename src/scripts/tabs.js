@@ -29,6 +29,7 @@ window.addEventListener('DOMContentLoaded', function () {
             item.addEventListener('click', (e) => {
                 hideTabContent(0)
                 unactiveTabBtn(0)
+                tabsListEl.classList.remove("active");
                 showTabContent(item.dataset.index)
                 item.classList.add('active')
                 showActiveEl(item.dataset.label)

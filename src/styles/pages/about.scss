@@ -400,6 +400,15 @@
     padding-top: 0;
   }
 
+  .about-ceo__info-list {
+    flex-direction: column;
+  }
+
+  .about-ceo__info-list-item {
+    display: flex;
+    justify-content: center;
+  }
+
   .about-ceo__content {
     flex-direction: column;
   }

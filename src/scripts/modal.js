@@ -24,13 +24,6 @@ if(closeBtns.length) {
     }
 }
 
-if (openThanksBtn) {
-    openThanksBtn.addEventListener('click', () => {
-        closeModal()
-        openThanksModal()
-    })
-}
-
 function openModal() {
     body.style.overflow = 'hidden'
 
@@ -53,3 +46,4 @@ function closeModal() {
     body.style.overflow = 'auto'
 }
 
+export {closeModal, openThanksModal}
