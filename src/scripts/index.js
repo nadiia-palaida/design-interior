@@ -45,7 +45,6 @@ function unActiveOptions() {
 }
 
 import WOW from 'wow.js'
-ScrollOut();
 
 window.addEventListener('load', () => {
     new WOW().init();
