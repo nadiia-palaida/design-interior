@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<!--    <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>-->
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+</head>
+
+<body class="page-dark">
+
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__content">
+            <div class="header__content-block">
+                <div class="header__logo-wrap">
+                    <a href="index.html" class="header__logo">
+                        LOGO
+                    </a>
+                </div>
+
+                <div class="menu__block-wrap">
+                    <div class="menu">
+                        <button class="menu__mobile-btn menu__mobile-btn__logo" id="menu-btn">
+                            <div class="menu__mobile-icon">
+                                <div class="menu__mobile-icon__line"></div>
+                                <div class="menu__mobile-icon__line"></div>
+                            </div>
+                            <div class="menu__mobile-title">Menu</div>
+                        </button>
+
+                        <div class="menu__list-wrap">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="projects.html" class="menu__link">Projects</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="about.html" class="menu__link">About us</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="news.html" class="menu__link">Blog</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="contact.html" class="menu__link">Contacts</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="language-wrap">
+                        <div class="language">
+                            <button class="language__active">En</button>
+
+                            <ul class="language__list">
+                                <li class="language__item">
+                                    <button class="language__btn">
+                                        UA
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button class="header__btn btn btn_empty make-request-btn">Send Request</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="menu menu-mobile" id="menu">
+    <div class="menu__list-wrap text-container">
+            <ul class="menu__list">
+                <li class="menu__item menu__item_mobile active">
+                    <a href="index.html" class="menu__link">Home</a>
+                </li>
+                <li class="menu__item menu__item_mobile">
+                    <a href="projects.html" class="menu__link">Projects</a>
+                </li>
+                <li class="menu__item menu__item_mobile">
+                    <a href="about.html" class="menu__link">About us</a>
+                </li>
+                <li class="menu__item menu__item_mobile">
+                    <a href="news.html" class="menu__link">Blog</a>
+                </li>
+                <li class="menu__item menu__item_mobile">
+                    <a href="contact.html" class="menu__link">Contacts</a>
+                </li>
+                <li class="menu__item menu__item_mobile">
+                    <button class="mobile-menu__btn-request btn btn_empty make-request-btn">Send Request</button>
+                </li>
+            </ul>
+    </div>
+
+    <div class="menu__main-info-wrap">
+        <div class="main-info menu__main-info">
+            <div class="container">
+                <div class="main-info__content">
+                    <ul class="main-info__social-list">
+                        <li class="main-info__social-item">
+                            <a href="#" class="main-info__social-link">Fb</a>
+                        </li>
+                        <li class="main-info__social-item">
+                            <a href="#" class="main-info__social-link">In</a>
+                        </li>
+                        <li class="main-info__social-item">
+                            <a href="#" class="main-info__social-link">Be</a>
+                        </li>
+                    </ul>
+
+                    <div class="main-info__city">
+                        <select name="City" id="City" class="select-city">
+                            <option value="Berlin" selected class="select-city__option">Berlin</option>
+                            <option value="Lublin" class="select-city__option">Lublin</option>
+                            <option value="Warszawa" class="select-city__option">Warszawa</option>
+                            <option value="Lviv" class="select-city__option">Lviv</option>
+                        </select>
+                    </div>
+
+                    <ul class="main-info__contacts">
+                        <li class="main-info__contacts-item">
+                            <a href="tel:+380983527547" class="main-info__contacts-link">+380983527547</a>
+                        </li>
+                        <li class="main-info__contacts-item">
+                            <a href="mailto: info@gmail.com" class="main-info__contacts-link">E: info@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="section-news news">
+    <div class="container">
+        <div class="news__content">
+            <div class="text-container">
+                <div class="news__top">
+                    <h1 class="news__title title">Our latest news</h1>
+
+                    <div class="tabs">
+                        <div class="tabs__active" id="active-tab"></div>
+                        <ul class="tabs__list" id="tabs-list">
+                            <li class="tabs__item news__tab" data-index="0" data-label="All">
+                                <button class="tabs__item-btn">All</button>
+                            </li>
+                            <li class="tabs__item news__tab" data-index="1" data-label="Blog">
+                                <button class="tabs__item-btn">Blog</button>
+                            </li>
+                            <li class="tabs__item news__tab" data-index="2" data-label="News">
+                                <button class="tabs__item-btn">News</button>
+                            </li>
+                            <li class="tabs__item news__tab" data-index="3" data-label="Advice from the designer">
+                                <button class="tabs__item-btn">Advice from the designer</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news__catalog tabs-content">
+                <div class="card-news card-news_full news__card">
+                    <a href="one-news.html" class="card-news__link-wrapper">
+                        <div class="card-news__content-block">
+                            <div class="card-news__text-wrap">
+                                <div class="card-news__title">
+                                    5 smart tips for productive collaboration with the designer
+                                </div>
+
+                                <div class="card-news__text text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                    Cras
+                                    vel gravida urna. Donec blandit sapien eu diam ullamcorper euismod. Nam tempus
+                                    pellentesque ligula ut aliquam.
+                                </div>
+
+                                <div>
+                                    <div class="link link_dark">Discover more</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-news__content-block">
+                            <div class="card-news__img-wrap">
+                                <img src="./images/news/1.jpg" alt="news image" class="card-news__img">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-news card-news_small news__card">
+                    <a href="one-news.html" class="card-news__link-wrapper">
+                        <div class="card-news__description">
+                            <div class="card-news__description-name">Non-standard plinth options</div>
+                        </div>
+
+                        <div class="card-news__content-block">
+                            <div class="card-news__img-wrap">
+                                <img src="./images/news/2.jpg" alt="news image" class="card-news__img">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-news card-news_small news__card">
+                    <a href="one-news.html" class="card-news__link-wrapper">
+                        <div class="card-news__description">
+                            <div class="card-news__description-name">Interior design, LCD Rybalsky</div>
+                        </div>
+
+                        <div class="card-news__content-block">
+                            <div class="card-news__img-wrap">
+                                <img src="./images/news/3.jpg" alt="news image" class="card-news__img">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-news card-news_full news__card">
+                    <a href="one-news.html" class="card-news__link-wrapper">
+                        <div class="card-news__content-block">
+                            <div class="card-news__text-wrap">
+                                <div class="card-news__title"> 5 smart tips for productive collaboration with the
+                                    designer
+                                </div>
+
+                                <div class="card-news__text text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                    Cras vel gravida urna. Donec blandit sapien eu diam ullamcorper euismod. Nam tempus
+                                    pellentesque ligula ut aliquam.
+                                </div>
+
+                                <div>
+                                    <div class="link link_dark">Discover more</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-news__content-block">
+                            <div class="card-news__img-wrap">
+                                <img src="./images/news/4.jpg" alt="news image" class="card-news__img">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="news__catalog tabs-content">
+                <div class="card-news card-news_small news__card">
+                    <a href="one-news.html" class="card-news__link-wrapper">
+                        <div class="card-news__description">
+                            <div class="card-news__description-name">Non-standard plinth options</div>
+                        </div>
+
+                        <div class="card-news__content-block">
+                            <div class="card-news__img-wrap">
+                                <img src="./images/news/2.jpg" alt="news image" class="card-news__img">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-news card-news_small news__card">
+                    <a href="one-news.html" class="card-news__link-wrapper">
+                        <div class="card-news__description">
+                            <div class="card-news__description-name">Interior design, LCD Rybalsky</div>
+                        </div>
+
+                        <div class="card-news__content-block">
+                            <div class="card-news__img-wrap">
+                                <img src="./images/news/3.jpg" alt="news image" class="card-news__img">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="news__catalog tabs-content">
+                <div class="card-news card-news_full news__card">
+                    <a href="one-news.html" class="card-news__link-wrapper">
+                        <div class="card-news__content-block">
+                            <div class="card-news__text-wrap">
+                                <div class="card-news__title"> 5 smart tips for productive collaboration with the
+                                    designer
+                                </div>
+
+                                <div class="card-news__text text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                    Cras vel gravida urna. Donec blandit sapien eu diam ullamcorper euismod. Nam tempus
+                                    pellentesque ligula ut aliquam.
+                                </div>
+
+                                <div>
+                                    <div class="link link_dark">Discover more</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-news__content-block">
+                            <div class="card-news__img-wrap">
+                                <img src="./images/news/4.jpg" alt="news image" class="card-news__img">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-news card-news_small news__card">
+                    <a href="one-news.html" class="card-news__link-wrapper">
+                        <div class="card-news__description">
+                            <div class="card-news__description-name">Non-standard plinth options</div>
+                        </div>
+
+                        <div class="card-news__content-block">
+                            <div class="card-news__img-wrap">
+                                <img src="./images/news/2.jpg" alt="news image" class="card-news__img">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-news card-news_small news__card">
+                    <a href="one-news.html" class="card-news__link-wrapper">
+                        <div class="card-news__description">
+                            <div class="card-news__description-name">Interior design, LCD Rybalsky</div>
+                        </div>
+
+                        <div class="card-news__content-block">
+                            <div class="card-news__img-wrap">
+                                <img src="./images/news/3.jpg" alt="news image" class="card-news__img">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="news__catalog tabs-content">
+                <div class="card-news card-news_full news__card">
+                    <a href="one-news.html" class="card-news__link-wrapper">
+                        <div class="card-news__content-block">
+                            <div class="card-news__text-wrap">
+                                <div class="card-news__title">
+                                    5 smart tips for productive collaboration with the designer
+                                </div>
+
+                                <div class="card-news__text text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                    Cras
+                                    vel gravida urna. Donec blandit sapien eu diam ullamcorper euismod. Nam tempus
+                                    pellentesque ligula ut aliquam.
+                                </div>
+
+                                <div>
+                                    <div class="link link_dark">Discover more</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-news__content-block">
+                            <div class="card-news__img-wrap">
+                                <img src="./images/news/1.jpg" alt="news image" class="card-news__img">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <button class="pagination__btn pagination__btn-prev">
+                    <svg viewBox="0 0 14 14" width="14" height="14" class="pagination__btn-prev-icon">
+                        <use xlink:href="./images/icons/sprite.svg#arrow-right"></use>
+                    </svg>
+                </button>
+
+                <ul class="pagination__list">
+                    <li class="pagination__item">
+                        <a href="#">01</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#">02</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#">03</a>
+                    </li>
+                    <li class="pagination__item pagination__dots">
+                        ...
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#">15</a>
+                    </li>
+                </ul>
+
+                <button class="pagination__btn pagination__btn-next">
+                    <svg viewBox="0 0 14 14" width="14" height="14">
+                        <use xlink:href="./images/icons/sprite.svg#arrow-right"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-news-info">
+    <div class="container">
+        <div class="text-container">
+            <div class="news__info-content news-info__content">
+                <div class="news__info-block news-info__block">
+                    <div class="news__info-text_big news__text-info title">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.
+                    </div>
+                </div>
+
+                <div class="news__info-block news-info__block">
+                    <div class="news__info-text_small news__text-info">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante
+                        felis, aliquam eu enim sed, ornare pretium velit.
+                    </div>
+
+                    <div class="input__wrap">
+                        <input type="text" class="input" placeholder="Email">
+
+                        <button class="input__btn-send">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <use xlink:href="./images/icons/sprite.svg#arrow-right-light"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__content">
+            <div class="footer__content-block">
+                <div class="footer__text">© Copyright 2018. All rights reserved</div>
+            </div>
+
+            <div class="footer__content-block">
+                <div class="footer__text">Made with love in</div>
+
+                <div class="footer__partner-logo">
+                    <a href="#" class="footer__partner-link">
+                      <span class="footer__partner-text">The First</span>
+                      <span class="footer__partner-text">The Last.</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</section>
+
+<div class="preload" id="preloader">
+    <div class="container">
+        <div class="preload__content">
+            <div class="preload__title title">HI</div>
+            <div id="animation-value" class="preload__percent-number preload__title title"></div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-request out">
+    <button class="modal__btn-close" id="close-modal">
+        <svg viewBox="0 0 9 9" width="9" height="9" class="input-file__btn-icon">
+            <use xlink:href="./images/icons/sprite.svg#cross"></use>
+        </svg>
+    </button>
+
+    <div class="modal__wrap">
+        <div class="modal__content-wrap">
+            <div class="container">
+                <div class="modal__content">
+                    <form action="#" id="form-request">
+                        <div class="modal__block">
+                            <h3 class="modal__title">Calculate the cost of work</h3>
+
+                            <div class="modal__form">
+                                <div class="modal__input">
+                                    <div class="input__wrap input__wrap_modal">
+                                        <input type="text" id="name" class="input" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="modal__input">
+                                    <div class="input__wrap input__wrap_modal">
+                                        <input type="text" id="last-name" class="input" placeholder="Last name">
+                                    </div>
+                                </div>
+                                <div class="modal__input">
+                                    <div class="input__wrap input__wrap_modal">
+                                        <input type="text" id="phone" class="input" placeholder="Phone">
+                                    </div>
+                                </div>
+                                <div class="modal__input">
+                                    <div class="input__wrap input__wrap_modal">
+                                        <input type="text" id="city" class="input" placeholder="Your city">
+                                    </div>
+                                </div>
+                                <div class="modal__input">
+                                    <div class="input__wrap input__wrap_modal">
+                                        <input type="text" id="email" class="input" placeholder="Email">
+                                    </div>
+                                </div>
+
+                                <div class="modal__input">
+                                    <select name="Property type" id="Property-type" class="select_modal">
+                                        <option value="Design" selected class="select-modal__option">Design</option>
+                                        <option value="Design2" class="select-modal__option">Design2</option>
+                                        <option value="Design3" class="select-modal__option">Design3</option>
+                                    </select>
+                                </div>
+
+                                <div class="modal__input" id="comment">
+                                    <div class="input__wrap input__wrap_modal">
+                                        <input type="text" class="input" placeholder="Your comment">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal__block">
+                            <div class="modal__subtitle modal__subtitle-select">Area (m2)</div>
+
+                            <div class="modal__select">
+                                <div class="select-type-line">
+                                    <ul class="type-line__list">
+                                        <li class="select-type-line__option">
+                                            <button class="select-type-line__option-btn" data-value="to 50">
+                                                <span class="select-type-line__option-text">to 50</span>
+                                                <span class="select-type-line__option-point"></span>
+                                            </button>
+
+                                            <div class="select-type-line__item"></div>
+                                        </li>
+                                        <li class="select-type-line__option">
+                                            <button class="select-type-line__option-btn" data-value="50-150">
+                                                <span class="select-type-line__option-text">50-150</span>
+                                                <span class="select-type-line__option-point"></span>
+                                            </button>
+                                            <div class="select-type-line__item"></div>
+                                        </li>
+                                        <li class="select-type-line__option">
+                                            <button class="select-type-line__option-btn" data-value="150-250">
+                                                <span class="select-type-line__option-text">150-250</span>
+                                                <span class="select-type-line__option-point"></span>
+                                            </button>
+                                            <div class="select-type-line__item"></div>
+                                        </li>
+                                        <li class="select-type-line__option">
+                                            <button class="select-type-line__option-btn" data-value="250-400">
+                                                <span class="select-type-line__option-text">250-400</span>
+                                                <span class="select-type-line__option-point"></span>
+                                            </button>
+                                            <div class="select-type-line__item"></div>
+                                        </li>
+                                        <li class="select-type-line__option">
+                                            <button class="select-type-line__option-btn" data-value="400-600">
+                                                <span class="select-type-line__option-text">400-600</span>
+                                                <span class="select-type-line__option-point"></span>
+                                            </button>
+                                            <div class="select-type-line__item"></div>
+                                        </li>
+                                        <li class="select-type-line__option">
+                                            <button class="select-type-line__option-btn" data-value="600-800">
+                                                <span class="select-type-line__option-text">600-800</span>
+                                                <span class="select-type-line__option-point"></span>
+                                            </button>
+                                            <div class="select-type-line__item"></div>
+                                        </li>
+                                        <li class="select-type-line__option">
+                                            <button class="select-type-line__option-btn" data-value="800-1000">
+                                                <span class="select-type-line__option-text">800-1000</span>
+                                                <span class="select-type-line__option-point"></span>
+                                            </button>
+                                            <div class="select-type-line__item"></div>
+                                        </li>
+                                        <li class="select-type-line__option">
+                                            <button class="select-type-line__option-btn" data-value="1000+">
+                                                <span class="select-type-line__option-text">1000+</span>
+                                                <span class="select-type-line__option-point"></span>
+                                            </button>
+                                            <div class="select-type-line__item"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="modal__send-wrap">
+                                <div class="modal__file">
+                                    <div class="input-file">
+                                        <label class="input-file__label" for="design-file">
+                                    <span class="input-file__btn">
+                                         <span class="input-file__btn-icon-wrap">
+                                             <svg viewBox="0 0 9 9" width="9" height="9" class="input-file__btn-icon">
+                                                <use xlink:href="./images/icons/sprite.svg#plus"></use>
+                                            </svg>
+                                        </span>
+                                    </span>
+
+                                            <span class="input-file__btn-text modal__text" id="design-file-text">
+                                        <span class="modal__subtitle input-file__btn-text-title">Attach your file</span>
+
+                                        <span class="modal__text">File size not more than 10 MB</span>
+                                    </span>
+                                        </label>
+
+                                        <input type="file" class="input-file__item" id="design-file">
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn_full btn_modal open-thanks-modal-btn">Send Request</button>
+                            </div>
+
+                            <div class="modal__footer">
+                                <div class="modal__footer-text">
+                                    It is a long established fact that a reader will be distracted by the readable content
+                                    of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                                    more-or-less normal distribution of letters, as opposed to using 'Content here, content
+                                    here', making it look like readable English.
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-thanks out">
+    <button class="modal__btn-close" id="close-modal">
+        <svg viewBox="0 0 9 9" width="9" height="9" class="input-file__btn-icon">
+            <use xlink:href="./images/icons/sprite.svg#cross"></use>
+        </svg>
+    </button>
+
+    <div class="modal__wrap">
+        <div class="modal__content-wrap">
+            <div class="container">
+                <div class="modal__content modal__content_thanks">
+                    <div class="modal__block modal__block_thanks">
+                        <div class="modal-thanks__text-wrap">
+                            <h3 class="modal__title modal-thanks__title">Thank you for your message!</h3>
+
+                            <div class="modal-thanks__text text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae
+                                posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.
+                            </div>
+
+                            <button class="btn btn_full make-request-btn btn_modal">Send Again</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="main.min.js"></script>
+</body>
+</html>
