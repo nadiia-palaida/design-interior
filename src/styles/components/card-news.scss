@@ -5,6 +5,10 @@
   margin-bottom: 8px;
 }
 
+.card-news__link-wrapper {
+  display: flex;
+}
+
 .card-news__description {
   position: absolute;
   top: 0;
@@ -183,11 +187,14 @@
 @media screen and (max-width: 576px) {
   .card-news {
     overflow: hidden;
-    flex-direction: column-reverse;
     max-height: 327px;
   }
 
-  .card-news__content-block {
+  .card-news__link-wrapper {
+    flex-direction: column-reverse;
+  }
+
+    .card-news__content-block {
     max-width: 100%;
   }
 

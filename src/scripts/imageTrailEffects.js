@@ -144,13 +144,13 @@
                     opacity: 1,
                     scale: 1,
                     zIndex: this.zIndexVal,
-                    x: cacheMousePos.x - img.rect.width*2,
+                    x: cacheMousePos.x,
                     y: cacheMousePos.y - img.rect.height
                 }, 0)
                 // animate position
                 .to(img.DOM.el, 0.9, {
                     ease: Expo.easeOut,
-                    x: mousePos.x - img.rect.width*2,
+                    x: mousePos.x,
                     y: mousePos.y - img.rect.height
                 }, 0)
                 // then make it disappear

@@ -6,9 +6,9 @@
   bottom: 0;
   overflow: auto;
   background: rgba(8, 8, 8, .96);
-  z-index: -1;
+  //z-index: -1;
   animation: all 0.3s;
-  opacity: 0;
+  //opacity: 0;
 
   &.active {
     transform: scale(1);
@@ -21,6 +21,9 @@
   }
 
   &.out {
+    animation: zIndexModal .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    animation-delay: .1s;
+
     .modal__content-wrap {
       animation: blowUpModalTwo .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
     }
@@ -44,6 +47,17 @@
   100% {
     transform: scale(0);
     opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes zIndexModal {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
   }
 }
 

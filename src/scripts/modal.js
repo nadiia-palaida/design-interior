@@ -27,21 +27,21 @@ if(closeBtns.length) {
 function openModal() {
     body.style.overflow = 'hidden'
 
-    modalRequest.classList.remove('out')
     modalRequest.classList.add('active')
+    modalRequest.classList.remove('out')
 }
 
 function openThanksModal() {
     body.style.overflow = 'hidden'
 
-    modalThanks.classList.remove('out')
     modalThanks.classList.add('active')
+    modalThanks.classList.remove('out')
 }
 
 function closeModal() {
     for(let i = 0; i < modal.length; i++) {
-        modal[i].classList.remove('active')
         modal[i].classList.add('out')
+        modal[i].classList.remove('active')
     }
     body.style.overflow = 'auto'
 }
