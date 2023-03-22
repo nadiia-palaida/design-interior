@@ -346,6 +346,15 @@
 }
 
 @media screen and (max-width: 576px) {
+  .section-about-main {
+    min-height: calc(100% - 75px);
+    height: calc(100% - 75px);
+  }
+
+  .about-main-wrap {
+    margin-top: 75px;
+  }
+
   .about-main__text-wrap {
     width: 100%;
   }
